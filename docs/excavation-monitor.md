@@ -195,6 +195,15 @@ normal        ─┬─> prewarning ─┬─> alarm ─┬─> alarm_confirmed 
 
 `samples/` 里的输入是**夹具档位**，只证明判定通路与旧引擎逐行一致，不构成任何规范依据。
 
+### 6.1 判据 3 的口径（轨AD · 2026-11-25 已拍板：口径乙·功能）
+
+- **函数数按条计（AST）**：本器官 **322**（`test_excavation_monitor.py` 103 + `test_excavation_monitor_matrix.py` 219）
+  ≥ 旧仓判定层 **268** → **过**；实跑 **322** 用例（无参数化）。
+- **文件数按域计**：本器官 **2 个域文件** / 旧仓 24 个文件。**容器数不等于覆盖数**——旧仓多出的文件里
+  大半是仓库级脚手架（`.gitattributes` 守卫、CI、发布、GUI、打包），见 §7 的处置表；故文件数**不作为判据**，只作记录。
+
+（口径统一说明见 `records/criterion-verdicts-20261125.md`。）
+
 ## 7. 判据 1 的分母与脚手架测试处置表
 
 `ORGAN-PLAYBOOK` §3.0：判据 1 的分母 = 旧仓 `tests/` 中**文件名**不匹配
@@ -237,7 +246,7 @@ normal        ─┬─> prewarning ─┬─> alarm ─┬─> alarm_confirmed 
 
 ```console
 $ python -m pip wheel . --no-deps --no-build-isolation -w /tmp/speccalc-wheel
-Successfully built construction-drawing-plan-checker
+Successfully built speccalc          ← 轨AD D 起发行名为 speccalc（原 construction-drawing-plan-checker）
 $ python -c "import zipfile; …"
 speccalc entries: 15        ← 器官 1 迁入时为 11
    speccalc/__init__.py   speccalc/cli.py   speccalc/py.typed

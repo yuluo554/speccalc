@@ -81,6 +81,13 @@ flowchart LR
 
 环境要求：Python **3.10+**（CI 覆盖 3.10 / 3.12 × Ubuntu / Windows），可选大模型 API（阿里云百炼等 OpenAI 兼容接口）。
 
+> **身份（2026-11-25 起，轨AD D）**
+> - 仓库名 / 产品名 / 主 CLI：**`speccalc`**
+> - **发行包名：`speccalc`**（原 `construction-drawing-plan-checker`；PyPI 旧名实测 404、未发布，改名无迁移包袱）
+> - **旧 CLI `construction-check` 是过渡入口，退役截止 `2026-11-30`**；两个入口并存属过渡态，
+>   由 `tests/test_entry_surface.py` 门守着（截止后只许 1 条）。旧包 `code/backend/app` 仍保留，但届时不得再有可执行入口。
+> - 本 README 下文的 `construction-check …` 示例在退役前仍可用
+
 ```bash
 git clone https://github.com/yuluo554/speccalc.git
 cd speccalc
@@ -98,7 +105,7 @@ py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（1108 项 = 旧套件 67 + 内核契约 28 + 器官 1013（excavation 322 / pavement 412 / steel 279），零 API 依赖）
+# 运行测试（1114 项 = 旧套件 67 + 内核契约 28 + 器官 1013（excavation 322 / pavement 412 / steel 279）+ 入口门 6，零 API 依赖）
 pytest -q -m "not packaging"     # 含打包实测的完整跑法见下方「安装形态」
 ```
 
@@ -148,7 +155,7 @@ py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key�
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
 │   │   ├── app/     应用代码
-│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约）+ 1013 项（器官），共 1108 项单元/集成测试
+│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约）+ 1013 项（器官）+ 6 项（入口门），共 1114 项单元/集成测试
 │   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
 │   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据

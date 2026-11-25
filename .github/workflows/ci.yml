@@ -44,7 +44,7 @@ jobs:
         run: python -m pip install -e ".[dev]"
 
       - name: Show resolved app path and version
-        run: python -c "import app, importlib.metadata as m; print('app at', app.__file__); print('version', m.version('construction-drawing-plan-checker'))"
+        run: python -c "import app, importlib.metadata as m; print('app at', app.__file__); print('version', m.version('speccalc'))"
 
       # 慢测试（真构建 wheel + 建 venv + 真装）只在 package job 跑一次，见该 job 的
       # "Assert wheel carries runtime assets"；这里跑其余全部测试。
@@ -167,7 +167,7 @@ jobs:
         run: |
           # 装完整依赖（不带 --no-deps）：selftest 的 Web 探针要 import fastapi。
           python -m pip install --force-reinstall dist/*.whl
-          python -c "import importlib.metadata as m; print('installed', m.version('construction-drawing-plan-checker'))"
+          python -c "import importlib.metadata as m; print('installed', m.version('speccalc'))"
           construction-check --help
           # 在仓库外跑，确保 console script 与资产都来自"装好的包"
           mkdir -p /tmp/outside2 && cd /tmp/outside2

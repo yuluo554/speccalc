@@ -3,7 +3,9 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "construction-drawing-plan-checker"
+# 轨AD D（2026-11-25）：发行包名从旧名 construction-drawing-plan-checker 改为产品名 speccalc。
+# PyPI 旧名实测 404（未发布），走「改名」分支；旧包目录 code/backend/app 与旧入口暂留（截止 2026-11-30）。
+name = "speccalc"
 version = "0.1.1"
 description = "施工图 × 施工方案 协同智能校核：参数卡解析、一致性比对、危大合规判定、规范条文 RAG 与 DOCX 报告"
 readme = "README.md"
