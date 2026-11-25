@@ -78,7 +78,7 @@ docs/<slug>.md                            # 输入 / 规则 / 算式 / 输出示
 |---|---|---|
 | 新包 | `src/speccalc/` | 本页所写的新内核 |
 | 旧包 | `code/backend/app` | 原样保留，器官逐个迁出后再删 |
-| 打包 | `pyproject.toml` 双根：`"" -> code/backend`、`"speccalc" -> src/speccalc` | setuptools 的 `get_package_dir` 按最长前缀回溯，子包解析正确（`pip wheel` 实测：`speccalc/` 下 15 个条目，其中 `data/` 3 个器官数据文件 `excavation-monitor.json` / `pavement-mqi.json` / `steel-member.json`，解包后 `speccalc list` 能列出 3 个器官 = 数据确实来自包内） |
+| 打包 | `pyproject.toml` 双根：`"" -> code/backend`、`"speccalc" -> src/speccalc` | setuptools 的 `get_package_dir` 按最长前缀回溯，子包解析正确（`pip wheel` 实测：`speccalc/` 下 15 个条目，其中 `data/` 4 个器官数据文件 `excavation-monitor.json` / `formwork-scaffold.json` / `pavement-mqi.json` / `steel-member.json`，解包后 `speccalc list` 能列出 4 个器官 = 数据确实来自包内） |
 | `setup.py` | 仍在，`build_py` 钩子把运行期资产铺进 `app/_data/` | **保留一版过渡**；新器官的 `data/` 由 `package-data` 的 `speccalc = ["py.typed", "data/*.json"]` 收 |
 
 ## 8. 示例（已迁入 3 个器官）
@@ -86,6 +86,7 @@ docs/<slug>.md                            # 输入 / 规则 / 算式 / 输出示
 ```console
 $ speccalc list
 excavation-monitor           0.1.0      基坑监测数据判读：双控报警（累计/速率/预警比例）+ 频率时效检核
+formwork-scaffold            0.1.0      脚手架与模板支架：JGJ 130/162 验算 + 危大分级 + 构造限值核查 + 两张皮一致性
 pavement-mqi                 0.1.0      公路技术状况评定：PCI / 路况等级 / 养护对策 / 路线 MQI（JTG 5210-2018 口径）
 steel-member                 0.1.0      钢结构验算：对接/角焊缝、普通/高强螺栓、轴压稳定与长细比（GB 50017-2017）
 
@@ -103,5 +104,6 @@ $ speccalc check excavation-monitor --input samples/excavation-monitor/zhdq.json
 | slug | 溯源 | 文档 |
 |---|---|---|
 | `excavation-monitor` | 迁自 target-map ③ 行 | [`excavation-monitor.md`](excavation-monitor.md) |
+| `formwork-scaffold` | 迁自 target-map ③ 行 | [`formwork-scaffold.md`](formwork-scaffold.md) |
 | `pavement-mqi` | 迁自 target-map ③ 行 | [`pavement-mqi.md`](pavement-mqi.md) |
 | `steel-member` | 迁自 target-map ③ 行 | [`steel-member.md`](steel-member.md) |

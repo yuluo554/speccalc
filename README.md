@@ -18,6 +18,7 @@
 ```console
 $ speccalc list
 excavation-monitor           0.1.0      基坑监测数据判读：双控报警（累计/速率/预警比例）+ 频率时效检核
+formwork-scaffold            0.1.0      脚手架与模板支架：JGJ 130/162 验算 + 危大分级 + 构造限值核查 + 两张皮一致性
 pavement-mqi                 0.1.0      公路技术状况评定：PCI / 路况等级 / 养护对策 / 路线 MQI（JTG 5210-2018 口径）
 steel-member                 0.1.0      钢结构验算：对接/角焊缝、普通/高强螺栓、轴压稳定与长细比（GB 50017-2017）
 ```
@@ -39,6 +40,7 @@ speccalc :: excavation-monitor 0.1.0 :: zhdq.json
 | 器官（module） | 溯源 | 状态 |
 |---|---|---|
 | `excavation-monitor` | 迁自 target-map ③ 行 | 已迁入 · 双控报警 + 频率时效 · [`docs`](docs/excavation-monitor.md) |
+| `formwork-scaffold` | 迁自 target-map ③ 行 | 已迁入 · JGJ 130/162 验算 + 危大分级 + 构造限值核查 · [`docs`](docs/formwork-scaffold.md) |
 | `pavement-mqi` | 迁自 target-map ③ 行 | 已迁入 · PCI / 等级 / 对策 / MQI · [`docs`](docs/pavement-mqi.md) |
 | `steel-member` | 迁自 target-map ③ 行 | 已迁入 · 焊缝 / 螺栓 / 轴压稳定（真条号）· [`docs`](docs/steel-member.md) |
 
@@ -94,7 +96,7 @@ git clone https://github.com/yuluo554/speccalc.git
 cd speccalc
 pip install -e ".[dev]"          # 也可 cd code/backend && pip install -r ../requirements.txt
 
-# 装完先自检：新入口列 3 个器官；旧包 selftest 用模块方式（cd code/backend && python -m app.cli selftest）
+# 装完先自检：新入口列 4 个器官；旧包 selftest 用模块方式（cd code/backend && python -m app.cli selftest）
 speccalc list
 
 # 方式一：Web 界面（推荐）—— 在 code/backend 下启动
@@ -106,7 +108,7 @@ py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（1114 项 = 旧套件 67 + 内核契约 28 + 器官 1013（excavation 322 / pavement 412 / steel 279）+ 入口门 6，零 API 依赖）
+# 运行测试（1386 项 = 旧套件 67 + 内核契约 28 + 器官 1285（excavation 322 / formwork 272 / pavement 412 / steel 279）+ 入口门 6，零 API 依赖）
 pytest -q -m "not packaging"     # 含打包实测的完整跑法见下方「安装形态」
 ```
 
@@ -156,7 +158,7 @@ py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key�
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
 │   │   ├── app/     应用代码
-│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约）+ 1013 项（器官）+ 6 项（入口门），共 1114 项单元/集成测试
+│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约）+ 1285 项（器官）+ 6 项（入口门），共 1386 项单元/集成测试
 │   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
 │   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据

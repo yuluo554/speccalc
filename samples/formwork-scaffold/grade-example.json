@@ -1,0 +1,10 @@
+{
+  "case_id": "GRADE-luodi-56",
+  "mode": "grade",
+  "grading": {
+    "item_id": "pan-luodi-gangguan-24",
+    "params": {
+      "build_height": 56.0
+    }
+  }
+}

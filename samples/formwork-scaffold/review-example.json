@@ -1,0 +1,29 @@
+{
+  "case_id": "REVIEW-luodi-12",
+  "mode": "review",
+  "review": {
+    "scheme": {
+      "project_type": "某工程 落地式扣件钢管脚手架专项施工方案",
+      "category": "coupler_steel_pipe_scaffold",
+      "params": {
+        "build_height": 12.0,
+        "step": 1.5,
+        "long_spacing": 1.5,
+        "cross_spacing": 1.05,
+        "wall_tie_v": 3.0,
+        "wall_tie_h": 4.5,
+        "rows": "double",
+        "scissor_brace": true,
+        "expert_review": false,
+        "special_plan": true
+      }
+    },
+    "calcbook": {
+      "params": {
+        "step": 1.5,
+        "long_spacing": 1.5,
+        "cross_spacing": 1.05
+      }
+    }
+  }
+}

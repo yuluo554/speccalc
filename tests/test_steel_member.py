@@ -110,9 +110,12 @@ def test_input_fields_declared():
     assert get(SLUG).input_fields == ("module", "case_id", "params", "forces", "design_values")
 
 
-def test_builtin_manifest_sorted_and_has_three_organs():
+def test_builtin_manifest_sorted_and_contains_migrated_organs():
     assert list(BUILTIN_MODULES) == sorted(BUILTIN_MODULES)
-    assert BUILTIN_MODULES == ("excavation-monitor", "pavement-mqi", "steel-member")
+    # 2026-11-25：第 4 个器官 formwork-scaffold 迁入后，清单不再固定为 3 个；
+    # 这里只锁「三个已吸收器官仍在册」，新增器官由各自的测试守门。
+    for slug in ("excavation-monitor", "pavement-mqi", "steel-member"):
+        assert slug in BUILTIN_MODULES
 
 
 def test_cli_list_shows_three_organs(capsys):
