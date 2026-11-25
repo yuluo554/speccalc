@@ -1,0 +1,33 @@
+{
+  "case_id": "SAMPLE-A2-FILLET",
+  "module": "fillet_weld",
+  "notice": "样例，不是真实设计文件。设计值取自旧仓 tests/fixtures/kb/ 的合成 verified 夹具口径（FIXTURE 前缀），只证明验算通路，不构成规范依据。",
+  "params": {"h_f": 8.0, "l_w": 200.0, "n_welds": 2, "load_direction": "side"},
+  "forces": {"N": 400000.0},
+  "design_values": {
+    "f_f_w": {"kind": "standard_value", "status": "verified", "value": 160.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具，非规范表值）"},
+    "beta_f": {"kind": "standard_value", "status": "verified", "value": 1.22,
+               "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "f_t_w": {"kind": "standard_value", "status": "verified", "value": 175.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "f_v_w": {"kind": "standard_value", "status": "verified", "value": 100.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "f_v_b": {"kind": "standard_value", "status": "verified", "value": 140.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "f_c_b": {"kind": "standard_value", "status": "verified", "value": 305.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "k_hsb": {"kind": "standard_value", "status": "verified", "value": 0.9,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "mu_hsb": {"kind": "standard_value", "status": "verified", "value": 0.45,
+               "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "P_hsb": {"kind": "standard_value", "status": "verified", "value": 155000.0,
+              "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "f_y": {"kind": "standard_value", "status": "verified", "value": 305.0,
+            "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "phi": {"kind": "standard_value", "status": "verified", "value": 0.75,
+            "evidence": "FIXTURE:kb-1（合成 verified 夹具）"},
+    "lambda_max": {"kind": "standard_value", "status": "verified", "value": 150.0,
+                   "evidence": "FIXTURE:kb-1（合成 verified 夹具）"}
+  }
+}

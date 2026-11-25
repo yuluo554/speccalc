@@ -1,0 +1,116 @@
+{
+  "schema": "speccalc-organ-data/1",
+  "organ": "excavation-monitor",
+  "version": "0.1.0",
+  "source": {
+    "target_map": "迁自 target-map ③ 行",
+    "items": "data/dict/monitoring_items.json",
+    "clauses": "data/clauses/register.json",
+    "rulesets": [
+      "data/rulesets/alarm_dual_control.json",
+      "data/rulesets/frequency_compliance.json"
+    ],
+    "state_machine": "src/pmc/contract/status.py",
+    "engine": "src/pmc/alarm/engine.py",
+    "auditor": "src/pmc/compliance/auditor.py",
+    "ported_on": "2026-11-25"
+  },
+  "notice": "本文件只搬『判据形态』：监测项目字典（单位 / 判据适用范围）、条款锚点、状态迁移表、间隔档位结构。**一个阈值数值都不搬**——旧产品把全部数值留 null / pending（GB 50497-2019 无官方可直连条文原文页，条号未经逐字核对），本产品沿用这条纪律：控制值由 subject 以「已核对来源」形态提供，条文由 basis 提供，器官自己既不造数值也不造条号。",
+  "clause_no_discipline": {
+    "clause_field": "clause 字段取旧产品 data/clauses/register.json 的登记键后缀（如 GB50497-2019:alarm-values -> alarm-values），不是条号。",
+    "why": "旧仓全部 5 条登记项的 clause_no 均为 null（未取得官方原文页，按纪律不凭记忆填写）。本器官不复述不存在的条号；条文库（--basis）给出该登记键对应的 version 与 text，三定位字段因此可填满。",
+    "open_question": "若要换成真实条号，需要先取得 GB 50497-2019 官方条文原文并核对条号；在此之前 clause 只能是登记键。"
+  },
+  "clauses": {
+    "alarm-values": {
+      "code": "GB 50497-2019",
+      "clause": "alarm-values",
+      "standard_title": "建筑基坑工程监测技术标准",
+      "topic": "累计量与变化速率报警值（模块 2 阈值的标准回退档）",
+      "clause_no": null
+    },
+    "monitoring-frequency": {
+      "code": "GB 50497-2019",
+      "clause": "monitoring-frequency",
+      "standard_title": "建筑基坑工程监测技术标准",
+      "topic": "监测频率随开挖深度与工况变化的要求，以及报警后加密观测的要求（模块 3）",
+      "clause_no": null
+    },
+    "MOHURD-37": {
+      "code": "住房城乡建设部令第 37 号",
+      "clause": "MOHURD-37",
+      "standard_title": "危险性较大的分部分项工程安全管理规定",
+      "topic": "监测与监理核查义务、超标后加密观测与处置的管理要求（法规锚点）",
+      "clause_no": null
+    }
+  },
+  "constants": {
+    "ge_eps": 1e-09,
+    "rate_unit_suffix": "/d",
+    "joiner_reason": ";",
+    "joiner_clause": ","
+  },
+  "states": {
+    "normal": "观测值未达任何控制线",
+    "prewarning": "达到预警比例但未达报警值",
+    "alarm": "达到控制值（未闭环）",
+    "alarm_confirmed": "已确认（未闭环）",
+    "alarm_handled": "已处置（闭环）",
+    "transitions": {
+      "normal": ["normal", "prewarning", "alarm"],
+      "prewarning": ["normal", "prewarning", "alarm"],
+      "alarm": ["alarm", "alarm_confirmed", "alarm_handled"],
+      "alarm_confirmed": ["alarm_confirmed", "alarm_handled"],
+      "alarm_handled": ["normal", "prewarning", "alarm"]
+    },
+    "unclosed": ["alarm", "alarm_confirmed"],
+    "severity": ["normal", "prewarning", "alarm", "alarm_confirmed"]
+  },
+  "items": [
+    {"code": "top_h_disp", "name": "支护结构顶部水平位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "top_v_disp", "name": "支护结构顶部竖向位移（沉降）", "unit": "mm", "control_kind": "dual"},
+    {"code": "deep_h_disp", "name": "深层水平位移（测斜管）", "unit": "mm", "control_kind": "dual"},
+    {"code": "column_v_disp", "name": "立柱竖向位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "pit_bottom_heave", "name": "基坑底隆起（回弹）", "unit": "mm", "control_kind": "dual"},
+    {"code": "prop_force", "name": "内支撑轴力", "unit": "kN", "control_kind": "dual"},
+    {"code": "anchor_force", "name": "锚杆/锚索拉力", "unit": "kN", "control_kind": "dual"},
+    {"code": "water_level", "name": "地下水位变化", "unit": "m", "control_kind": "dual"},
+    {"code": "ground_v_disp", "name": "基坑外地面竖向位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "building_v_disp", "name": "周边建（构）筑物竖向位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "building_tilt", "name": "周边建（构）筑物倾斜", "unit": "‰", "control_kind": "cumulative"},
+    {"code": "pipeline_v_disp", "name": "周边管线竖向位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "soil_h_disp", "name": "周边土体水平位移", "unit": "mm", "control_kind": "dual"},
+    {"code": "crack_width", "name": "裂缝宽度变化", "unit": "mm", "control_kind": "cumulative"}
+  ],
+  "rules": {
+    "alarm": {
+      "cumulative": {"clause": "alarm-values", "applies_to": ["dual", "cumulative"]},
+      "rate": {"clause": "alarm-values", "applies_to": ["dual", "rate"]},
+      "prewarning": {"applies_to": ["dual", "cumulative"], "clause": "alarm-values", "note": "预警比例是项目配置（旧仓 WARN-*-RATIO 的 clause_ids 为空）；本产品把「未达报警值」这一行的依据登记到报警值条款，比例值与出处写在 evidence 里。"}
+    },
+    "frequency": {
+      "missed": {"clause": "monitoring-frequency"},
+      "interval": {"clause": "monitoring-frequency"},
+      "condition-change": {"clause": "monitoring-frequency"},
+      "intensify-after-alarm": {
+        "clause": "monitoring-frequency",
+        "clause_ids": ["monitoring-frequency", "MOHURD-37"],
+        "note": "一条账本行只挂一条依据；主依据取 monitoring-frequency，全部条款登记键写在 evidence.clause_ids。"
+      },
+      "interval_bands": [
+        {"id": "FREQ-MAX-INTERVAL-D5", "depth_max": 5.0, "label": "开挖深度不超过 5 m"},
+        {"id": "FREQ-MAX-INTERVAL-D10", "depth_max": 10.0, "label": "开挖深度不超过 10 m"},
+        {"id": "FREQ-MAX-INTERVAL-DEEP", "depth_max": null, "label": "开挖深度超过 10 m 或未登记深度（兜底档）"}
+      ]
+    }
+  },
+  "input_contract": {
+    "control_value": {
+      "kind": ["design_value", "standard_value", "user_input"],
+      "status": ["verified"],
+      "required": ["kind", "status", "value", "unit", "evidence"],
+      "reject_note": "kind=none / status!=verified / 缺 evidence / 缺 unit 一律判输入不合法（旧仓此时出『待定值』；本产品无降级态，改为拒绝计算）。"
+    },
+    "unit_rule": "累计量与字典单位必须一致；速率单位必须为『字典单位 + /d』。不一致即输入不合法（旧仓 reason=unit_inconsistent）。"
+  }
+}

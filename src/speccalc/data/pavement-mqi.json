@@ -1,0 +1,120 @@
+{
+  "schema": "speccalc-organ-data/1",
+  "organ": "pavement-mqi",
+  "version": "0.1.0",
+  "source": {
+    "target_map": "迁自 target-map ③ 行",
+    "items": "src/road_mqi_checker/rulesets/base-jtg5210-2018.json",
+    "clauses": "src/road_mqi_checker/rulesets/base-jtg5210-2018.json#coefficients[].basis[]",
+    "state_machine": "src/road_mqi_checker/models.py",
+    "engine": "src/road_mqi_checker/pci.py / mqi.py / strategy.py",
+    "ported_on": "2026-11-25"
+  },
+  "notice": "本文件只搬『判据形态』：指标构成（扣分项 / 分项得分 / 权重 / 分级档 / 对策规则）与条款锚点键。**一个系数数值都不搬**——旧仓内置包的 15 格规范系数里 14 格 status=pending、values=null（官方渠道取不到可定位条款号与表号的原文），本产品沿用这条纪律：系数由 subject 以「已核对来源」形态提供，条文由 basis 提供。",
+  "clause_no_discipline": {
+    "clause_field": "clause 字段取旧仓系数键（如 deduct_ratio.asphalt_distress、grade_threshold.pci），不是条号。",
+    "why": "旧仓 15 格系数的 basis[].clause 全为空字符串（官方渠道取不到条款号/表号原文，见 data/README.md §一与 plan/04），因此不存在可引用的条号。本器官不复述不存在的条号。",
+    "open_question": "若要求真实条号（JTG 5210-2018 的 5.x / 表 5.x），需先取得官方原文并核对；在此之前 clause 只能是系数键。"
+  },
+  "clauses": {
+    "deduct_ratio.asphalt_distress": {
+      "code": "JTG 5210-2018",
+      "clause": "deduct_ratio.asphalt_distress",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "沥青路面破损扣分比率（按破损类型 × 轻重程度）",
+      "clause_no": null
+    },
+    "deduct_ratio.cement_distress": {
+      "code": "JTG 5210-2018",
+      "clause": "deduct_ratio.cement_distress",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "水泥混凝土路面破损扣分比率",
+      "clause_no": null
+    },
+    "pci_component.ride_quality": {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.ride_quality",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "行驶质量分项得分（由 RQI 换算）",
+      "clause_no": null
+    },
+    "pci_component.rutting": {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.rutting",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "车辙分项得分（由车辙深度换算）",
+      "clause_no": null
+    },
+    "pci_component.skid_resistance": {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.skid_resistance",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "抗滑分项得分（由摆值 / 横向力系数换算）",
+      "clause_no": null
+    },
+    "pci_weight.asphalt": {
+      "code": "JTG 5210-2018",
+      "clause": "pci_weight.asphalt",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "沥青路面 PCI 分项权重",
+      "clause_no": null
+    },
+    "pci_weight.cement": {
+      "code": "JTG 5210-2018",
+      "clause": "pci_weight.cement",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "水泥混凝土路面 PCI 分项权重",
+      "clause_no": null
+    },
+    "grade_threshold.pci": {
+      "code": "JTG 5210-2018",
+      "clause": "grade_threshold.pci",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "PCI 路况等级分档（优 / 良 / 中 / 次 / 差）与含界口径",
+      "clause_no": null
+    },
+    "grade_threshold.mqi": {
+      "code": "JTG 5210-2018",
+      "clause": "grade_threshold.mqi",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "MQI 等级分档与含界口径",
+      "clause_no": null
+    },
+    "mqi_weight.pavement": {
+      "code": "JTG 5210-2018",
+      "clause": "mqi_weight.pavement",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "MQI 中路面分项权重与三级汇总（路段→路线→路网）",
+      "clause_no": null
+    },
+    "action_rule.maintenance_trigger": {
+      "code": "JTG 5210-2018",
+      "clause": "action_rule.maintenance_trigger",
+      "standard_title": "公路技术状况评定标准",
+      "topic": "养护对策触发规则（IF 指标 / 比较符 / 阈值 THEN 工程类别 + 规模档）",
+      "clause_no": null
+    }
+  },
+  "constants": {
+    "score_floor": 0.0,
+    "score_ceiling": 100.0,
+    "round_digits": 2
+  },
+  "grades": {
+    "order": ["优", "良", "中", "次", "差"],
+    "boundaries": ["lower_inclusive", "lower_exclusive"]
+  },
+  "metrics": {
+    "pci_components": ["distress", "ride_quality", "rutting", "skid_resistance"],
+    "levels": ["segment", "route"],
+    "operators": ["lt", "le", "gt", "ge"]
+  },
+  "input_contract": {
+    "coefficient": {
+      "status": ["verified"],
+      "required": ["kind", "status", "value", "evidence"],
+      "reject_note": "status!=verified / 缺 value / 缺 evidence 一律判输入不合法（旧仓此时出 blocked；本产品无降级态，改为拒绝计算）。"
+    },
+    "measured": "measured 里缺任一被权重要求的分项（rqi / rut_depth_mm / skid）即输入不合法；未提供的分项不得按 100 分补齐。"
+  }
+}

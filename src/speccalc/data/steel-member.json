@@ -1,0 +1,76 @@
+{
+  "schema": "speccalc-organ-data/1",
+  "organ": "steel-member",
+  "version": "0.1.0",
+  "source": {
+    "target_map": "迁自 target-map ③ 行",
+    "clauses": "data/clauses/gb50017.json",
+    "formulas": "data/formulas/gb50017.json",
+    "tables": "data/tables/gb50017.json",
+    "engine": "src/sdc/engine/core.py / expr.py",
+    "ported_on": "2026-11-25"
+  },
+  "notice": "本文件搬『条款锚点 + 验算形态』：这一仓是三个器官里**唯一有真条号**的（旧仓 data/clauses/gb50017.json 的 D.0.1~D.0.5 已 verified，其余 located 的条号也逐字写在 clause_no）。数值一律不搬：旧仓 14 条公式全 pending、5 个模块的承载力设计值都要查表，本器官要求 subject 以「已核对来源」提供设计值与系数。",
+  "clause_no_discipline": {
+    "clause_field": "clause 字段是旧仓 clause_no 原值（如 11.2.1 / 7.2.1），不是自造编号。",
+    "why": "GB 50017-2017 的条号在旧仓是逐条登记过的；本器官只引用这些既有条号，不新增。",
+    "version": "GB 50017-2017（2018-07-01 实施），版本号写进 basis_ref.version。"
+  },
+  "code": "GB 50017-2017",
+  "standard_version": "2017",
+  "clauses": {
+    "butt.tension": {"clause": "11.2.1", "topic": "对接焊缝抗拉：N / (l_w × t) ≤ f_t^w"},
+    "butt.shear": {"clause": "11.2.1", "topic": "对接焊缝抗剪：V / (l_w × t) ≤ f_v^w"},
+    "fillet.side": {"clause": "11.2.2", "topic": "角焊缝侧面：N / (h_e × l_w总) ≤ f_f^w"},
+    "fillet.front": {"clause": "11.2.2", "topic": "角焊缝正面：N / (h_e × l_w总) ≤ β_f × f_f^w"},
+    "bolt.shear": {"clause": "11.4.1", "topic": "普通螺栓抗剪：N_v / A_s ≤ f_v^b"},
+    "bolt.bearing": {"clause": "11.4.1", "topic": "普通螺栓承压：N_v / (d × Σt) ≤ f_c^b"},
+    "hsb.friction": {"clause": "11.4.2", "topic": "高强螺栓摩擦型：k × n_f × μ × P ≥ N_v"},
+    "column.stability": {"clause": "7.2.1", "topic": "轴心受压稳定：N / (φ × A) ≤ f"},
+    "column.slenderness": {"clause": "7.2.2", "topic": "长细比：λ = max(l_0x/i_x, l_0y/i_y) ≤ 容许长细比"}
+  },
+  "constants": {
+    "ratio_tol": 0.001,
+    "need_adjust_floor": 0.95,
+    "fillet_effective_factor": 0.7
+  },
+  "modules": {
+    "butt_weld": {
+      "checks": ["butt.tension", "butt.shear"],
+      "params": ["l_w", "t"],
+      "forces": ["N", "V"]
+    },
+    "fillet_weld": {
+      "checks": ["fillet.side", "fillet.front"],
+      "params": ["h_f", "l_w", "n_welds", "load_direction"],
+      "forces": ["N"]
+    },
+    "bolt_normal": {
+      "checks": ["bolt.shear", "bolt.bearing"],
+      "params": ["d", "bolt_count", "t_sum"],
+      "forces": ["V"]
+    },
+    "bolt_hsb_friction": {
+      "checks": ["hsb.friction"],
+      "params": ["n_f", "bolt_count"],
+      "forces": ["V"]
+    },
+    "column_buckling": {
+      "checks": ["column.stability", "column.slenderness"],
+      "params": ["A", "l_0x", "l_0y", "i_x", "i_y"],
+      "forces": ["N"]
+    }
+  },
+  "design_value_keys": [
+    "f_t_w", "f_v_w", "f_f_w", "beta_f", "f_v_b", "f_c_b",
+    "k_hsb", "mu_hsb", "P_hsb", "f_y", "phi", "lambda_max"
+  ],
+  "input_contract": {
+    "design_value": {
+      "status": ["verified"],
+      "required": ["kind", "status", "value", "evidence"],
+      "reject_note": "status!=verified / 缺 value / 缺 evidence 一律判输入不合法（旧仓此时出 blocked；本产品无降级态，改为拒绝计算）。"
+    },
+    "verdict_mapping": "旧 satisfied / need_adjust -> ok；旧 unsatisfied -> rejected；旧 blocked -> 输入不合法（rc 2）。"
+  }
+}

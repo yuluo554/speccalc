@@ -1,0 +1,125 @@
+{
+  "version": "speccalc-samples-20261125",
+  "clauses": [
+    {
+      "code": "GB 50497-2019",
+      "clause": "alarm-values",
+      "version": "2019",
+      "text": "监测项目累计变化量与变化速率应设控制值；监测数据达到控制值时应立即报警并通知相关单位。（登记键 alarm-values 的占位文本：旧仓 clause_no 为 null，条号未逐字核对。）"
+    },
+    {
+      "code": "GB 50497-2019",
+      "clause": "monitoring-frequency",
+      "version": "2019",
+      "text": "监测频率应满足所测对象随施工进程的发展而及时反映其变化的要求；开挖深度、工况变化与报警后应调整监测频率。（登记键 monitoring-frequency；条号未逐字核对。）"
+    },
+    {
+      "code": "住房城乡建设部令第 37 号",
+      "clause": "MOHURD-37",
+      "version": "2018",
+      "text": "监测单位发现监测数据异常或达到报警值时，应及时报告并增加监测频率。（登记键 MOHURD-37；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "deduct_ratio.asphalt_distress",
+      "version": "2018",
+      "text": "沥青路面破损扣分比率按破损类型与轻重程度取值。（登记键 deduct_ratio.asphalt_distress；旧仓条款号为空，未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "deduct_ratio.cement_distress",
+      "version": "2018",
+      "text": "水泥混凝土路面破损扣分比率按破损类型与轻重程度取值。（登记键 deduct_ratio.cement_distress；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.ride_quality",
+      "version": "2018",
+      "text": "行驶质量分项得分由 RQI 按理想值与零值换算。（登记键 pci_component.ride_quality；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.rutting",
+      "version": "2018",
+      "text": "车辙分项得分由车辙深度按理想值与零值换算。（登记键 pci_component.rutting；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "pci_component.skid_resistance",
+      "version": "2018",
+      "text": "抗滑分项得分由抗滑指标按理想值与零值换算。（登记键 pci_component.skid_resistance；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "pci_weight.asphalt",
+      "version": "2018",
+      "text": "沥青路面 PCI 由破损、行驶质量、车辙、抗滑四个分项按权重加权。（登记键 pci_weight.asphalt；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "pci_weight.cement",
+      "version": "2018",
+      "text": "水泥混凝土路面 PCI 的分项权重。（登记键 pci_weight.cement；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "grade_threshold.pci",
+      "version": "2018",
+      "text": "PCI 路况等级分优、良、中、次、差五档，并规定含界口径。（登记键 grade_threshold.pci；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "grade_threshold.mqi",
+      "version": "2018",
+      "text": "MQI 等级分档与含界口径。（登记键 grade_threshold.mqi；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "mqi_weight.pavement",
+      "version": "2018",
+      "text": "MQI 按路段长度加权汇总到路线与路网，首期只计路面分项。（登记键 mqi_weight.pavement；条号未逐字核对。）"
+    },
+    {
+      "code": "JTG 5210-2018",
+      "clause": "action_rule.maintenance_trigger",
+      "version": "2018",
+      "text": "按指标与阈值触发养护对策（工程类别与规模档）。（登记键 action_rule.maintenance_trigger；条号未逐字核对。）"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "11.2.1",
+      "version": "2017",
+      "text": "对接焊缝或对接与角接组合焊缝，其正拉强度或抗剪强度应满足设计要求。"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "11.2.2",
+      "version": "2017",
+      "text": "角焊缝的强度应按有效截面计算。"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "11.4.1",
+      "version": "2017",
+      "text": "普通螺栓受剪连接应按抗剪与承压两种承载力分别验算。"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "11.4.2",
+      "version": "2017",
+      "text": "高强度螺栓摩擦型连接应按摩擦面抗滑移承载力验算。"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "7.2.1",
+      "version": "2017",
+      "text": "轴心受压构件的整体稳定承载力按 N/(φA) 验算。"
+    },
+    {
+      "code": "GB 50017-2017",
+      "clause": "7.2.2",
+      "version": "2017",
+      "text": "轴心受压构件的长细比不应超过容许值。"
+    }
+  ]
+}

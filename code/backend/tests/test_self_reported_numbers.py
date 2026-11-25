@@ -22,6 +22,21 @@ README = os.path.join(REPO, "README.md")
 DATA_README = os.path.join(REPO, "data", "README.md")
 DATA = os.path.join(REPO, "data")
 
+#: 2026-11-25 slug 重命名后遗留的 9 个旧文件名（内容已逐条迁到新命名文件）。
+#: 按主对话要求旧文件保留在磁盘上、由主对话统一删除；在此之前它们不参与
+#: 「README N 项」的自述计数，否则同一条用例会被算两遍。删除后一并移除本清单。
+LEGACY_DUPLICATES = frozenset({
+    "test_pit_monitoring_checker.py",
+    "test_pit_monitoring_matrix.py",
+    "test_road_mqi_checker.py",
+    "test_road_mqi_contract.py",
+    "test_road_mqi_deduct.py",
+    "test_road_mqi_grade.py",
+    "test_steel_design_checker.py",
+    "test_steel_design_checks.py",
+    "test_steel_design_params.py",
+})
+
 
 def read(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -44,6 +59,8 @@ def count_tests():
             continue
         for name in sorted(os.listdir(tdir)):
             if not (name.startswith("test_") and name.endswith(".py")):
+                continue
+            if name in LEGACY_DUPLICATES:
                 continue
             src = read(os.path.join(tdir, name))
             total += len(re.findall(r"^def (test_\w+)", src, re.M))

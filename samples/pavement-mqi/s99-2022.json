@@ -1,0 +1,127 @@
+{
+  "project": "S99-2022",
+  "year": 2022,
+  "minimum_grade": "中",
+  "notice": "样例，不是真实检测数据。系数格取自旧仓 tests/fixtures/pci-fixture-asphalt.json 的夹具口径（FIXTURE 前缀），只用于证明计算通路，不构成规范依据。",
+  "segments": [
+    {
+      "segment_id": "S99-A1",
+      "route_id": "S99",
+      "surface_type": "asphalt",
+      "length_m": 1000.0,
+      "lane_count": 2,
+      "width_m": 7.5,
+      "panel_count": 500,
+      "measured": {"rqi": 7.4, "rut_depth_mm": 6.0, "skid": 48.0},
+      "distresses": [
+        {"type": "横向裂缝", "severity": "轻", "quantity": 60.0, "unit": "m"},
+        {"type": "车辙", "severity": "中", "quantity": 120.0, "unit": "m2"}
+      ]
+    },
+    {
+      "segment_id": "S99-A2",
+      "route_id": "S99",
+      "surface_type": "asphalt",
+      "length_m": 500.0,
+      "lane_count": 2,
+      "width_m": 7.5,
+      "panel_count": 250,
+      "measured": {"rqi": 4.2, "rut_depth_mm": 18.0, "skid": 33.0},
+      "distresses": [
+        {"type": "横向裂缝", "severity": "重", "quantity": 260.0, "unit": "m"},
+        {"type": "坑槽", "severity": "重", "quantity": 12.0, "unit": "处"}
+      ]
+    }
+  ],
+  "coefficients": [
+    {
+      "key": "deduct_ratio.asphalt_distress",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径，非规范表值）",
+      "value": {
+        "ratios": {
+          "横向裂缝": {"轻": 0.4, "中": 0.8, "重": 1.2},
+          "纵向裂缝": {"轻": 0.3, "中": 0.6, "重": 0.9},
+          "车辙": {"轻": 0.5, "中": 1.0, "重": 1.5},
+          "坑槽": {"轻": 0.8, "中": 1.6, "重": 2.4}
+        },
+        "denominator": {"m": "length_m", "m2": "length_m", "处": "panel_count"}
+      }
+    },
+    {
+      "key": "pci_component.ride_quality",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径）",
+      "value": {"ideal_value": 10.0, "zero_value": 0.0}
+    },
+    {
+      "key": "pci_component.rutting",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径）",
+      "value": {"ideal_mm": 0.0, "zero_mm": 20.0}
+    },
+    {
+      "key": "pci_component.skid_resistance",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径）",
+      "value": {"ideal_value": 60.0, "zero_value": 0.0}
+    },
+    {
+      "key": "pci_weight.asphalt",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径）",
+      "value": {"weights": {"distress": 0.35, "ride_quality": 0.35, "rutting": 0.2, "skid_resistance": 0.1}}
+    },
+    {
+      "key": "grade_threshold.pci",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径，含界口径 lower_inclusive）",
+      "value": {
+        "boundary": "lower_inclusive",
+        "bands": [
+          {"grade": "优", "min": 90.0},
+          {"grade": "良", "min": 80.0},
+          {"grade": "中", "min": 70.0},
+          {"grade": "次", "min": 60.0},
+          {"grade": "差", "min": 0.0}
+        ]
+      }
+    },
+    {
+      "key": "grade_threshold.mqi",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径）",
+      "value": {
+        "boundary": "lower_inclusive",
+        "bands": [
+          {"grade": "优", "min": 90.0},
+          {"grade": "良", "min": 80.0},
+          {"grade": "中", "min": 70.0},
+          {"grade": "次", "min": 60.0},
+          {"grade": "差", "min": 0.0}
+        ]
+      }
+    },
+    {
+      "key": "mqi_weight.pavement",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具口径，首期只有路面分项）",
+      "value": {"weights": {"pavement": 1.0}}
+    },
+    {
+      "key": "action_rule.maintenance_trigger",
+      "status": "verified",
+      "evidence": "FIXTURE:syn-m4-fixture-1（测试夹具规则链，非规范阈值）",
+      "value": {
+        "rules": [
+          {"rule_id": "AR-PCI-LT60", "metric": "pci", "op": "lt", "threshold": 60.0,
+           "action_class": "大修", "scale_band": "全幅"},
+          {"rule_id": "AR-PCI-LT70", "metric": "pci", "op": "lt", "threshold": 70.0,
+           "action_class": "中修", "scale_band": "分段"},
+          {"rule_id": "AR-PCI-LT80", "metric": "pci", "op": "lt", "threshold": 80.0,
+           "action_class": "小修", "scale_band": "点状"}
+        ]
+      }
+    }
+  ]
+}

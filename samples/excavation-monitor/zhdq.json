@@ -1,0 +1,7376 @@
+{
+ "project": "SYN-ZHDQ",
+ "prewarning_ratio": 0.7,
+ "rate_window_days": 5,
+ "rounds": [
+  {
+   "index": 1,
+   "observed_on": "2026-03-02",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 2,
+   "observed_on": "2026-03-04",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 3,
+   "observed_on": "2026-03-06",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 4,
+   "observed_on": "2026-03-08",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 5,
+   "observed_on": "2026-03-10",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 6,
+   "observed_on": "2026-03-12",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 7,
+   "observed_on": "2026-03-14",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 8,
+   "observed_on": "2026-03-16",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 9,
+   "observed_on": "2026-03-18",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 10,
+   "observed_on": "2026-03-20",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 11,
+   "observed_on": "2026-03-22",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 12,
+   "observed_on": "2026-03-24",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 13,
+   "observed_on": "2026-03-26",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 14,
+   "observed_on": "2026-03-28",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 15,
+   "observed_on": "2026-03-30",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 16,
+   "observed_on": "2026-04-01",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 17,
+   "observed_on": "2026-04-03",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 18,
+   "observed_on": "2026-04-05",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 19,
+   "observed_on": "2026-04-07",
+   "scheduled": true,
+   "intensified": false
+  },
+  {
+   "index": 20,
+   "observed_on": "2026-04-09",
+   "scheduled": true,
+   "intensified": false
+  }
+ ],
+ "points": [
+  {
+   "code": "SYN-CV-01",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-02",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-03",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-04",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-05",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-06",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-07",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-08",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-09",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-10",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-11",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-12",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-13",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-14",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-15",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-16",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-17",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-18",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-19",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-20",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-21",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-22",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-23",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -0.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-24",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-25",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-26",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-27",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-CV-28",
+   "item_code": "column_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 8.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.6,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -0.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -1.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-01",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-02",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-03",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.6,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-04",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-05",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-06",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-07",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-08",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-09",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-10",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-11",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-12",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-13",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-14",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-15",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-16",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-17",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-18",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.6,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-19",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-20",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.6,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-21",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 11.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-22",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-23",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-24",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-25",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-26",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-27",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 8.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 10.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-DH-28",
+   "item_code": "deep_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 30.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 9.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 12.7,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-01",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-02",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-03",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-04",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-05",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-06",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-07",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-08",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-09",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-10",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-11",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-12",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-13",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-14",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-15",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-16",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-17",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-18",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-19",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-20",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-21",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-22",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-23",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-24",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-25",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -2.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-26",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-27",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PB-28",
+   "item_code": "pit_bottom_heave",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 12.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.8,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": -1.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": -1.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": -2.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-01",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-02",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-03",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 12.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 17.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-04",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-05",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-06",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-07",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-08",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-09",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-10",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-11",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-12",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-13",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 12.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-14",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 12.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-15",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 12.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-16",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-17",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-18",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-19",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-20",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-21",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-22",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 12.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 15.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 17.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-23",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-24",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-25",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-26",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-27",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-PF-28",
+   "item_code": "prop_force",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 40.0,
+     "unit": "kN",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 3.0,
+     "unit": "kN/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 11.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 16.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-01",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-02",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-03",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 14.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 20.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-04",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.6,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-05",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.7,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-06",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.6,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.7,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-07",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-08",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-09",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-10",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-11",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-12",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-13",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.5,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-14",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-15",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-16",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-17",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.4,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-18",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 26.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 28.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 29.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-19",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-20",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-21",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-22",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-23",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.7,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-24",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 9.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 10.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-25",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-26",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-27",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TH-28",
+   "item_code": "top_h_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 25.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.5,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 6.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 8.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 9.6,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-01",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.4,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.2,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-02",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-03",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-04",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-05",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.6,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-06",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.7,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-07",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 7.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 11.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 13.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-08",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.6,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-09",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-10",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.8,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-11",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-12",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.3,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.7,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.5,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-13",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-14",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-15",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 6.9,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.8,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-16",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-17",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-18",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-19",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.4,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-20",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-21",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.9,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.6,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.3,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-22",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.1,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-23",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.7,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-24",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.4,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.0,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-25",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.0,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-26",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.8,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.5,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 8.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-27",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.5,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.1,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-TV-28",
+   "item_code": "top_v_disp",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 20.0,
+     "unit": "mm",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.2,
+     "unit": "mm/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 5.6,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 7.2,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 7.9,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-01",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-02",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.32,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-03",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-04",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-05",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-06",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.31,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-07",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.18,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.33,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.42,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-08",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.31,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-09",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-10",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.28,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.38,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-11",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.18,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.32,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.42,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-12",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-13",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.18,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.32,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.42,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-14",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.38,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-15",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-16",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-17",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-18",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-19",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.31,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-20",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-21",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-22",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.28,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.39,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-23",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-24",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-25",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.31,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-26",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.16,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.3,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.4,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-27",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.15,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.29,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.38,
+     "missing": false
+    }
+   ]
+  },
+  {
+   "code": "SYN-WL-28",
+   "item_code": "water_level",
+   "control": {
+    "cumulative": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 1.0,
+     "unit": "m",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    },
+    "rate": {
+     "kind": "user_input",
+     "status": "verified",
+     "value": 0.3,
+     "unit": "m/d",
+     "evidence": "FIXTURE-GRADE:syn-m2-fixture-1（测试夹具档位：非设计文件值、非规范条文值）"
+    }
+   },
+   "observations": [
+    {
+     "round": 9,
+     "value": 0.17,
+     "missing": false
+    },
+    {
+     "round": 11,
+     "value": 0.31,
+     "missing": false
+    },
+    {
+     "round": 12,
+     "value": 0.41,
+     "missing": false
+    }
+   ]
+  }
+ ]
+}

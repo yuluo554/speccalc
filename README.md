@@ -17,16 +17,30 @@
 
 ```console
 $ speccalc list
-（未注册任何器官）
+excavation-monitor           0.1.0      基坑监测数据判读：双控报警（累计/速率/预警比例）+ 频率时效检核
+pavement-mqi                 0.1.0      公路技术状况评定：PCI / 路况等级 / 养护对策 / 路线 MQI（JTG 5210-2018 口径）
+steel-member                 0.1.0      钢结构验算：对接/角焊缝、普通/高强螺栓、轴压稳定与长细比（GB 50017-2017）
 ```
 
 契约（唯一入口 / 计算书 / 退出码）见 [`docs/speccalc.md`](docs/speccalc.md)。
 与其余三个产品共用 `SKELETON-SPEC`：账本 = **计算书**（`ok` / `rejected`），
 `basis_ref` = 规范条款（`code` + `clause` + `version`），退出码 `0/1/2/3`。
 
-| 器官（module） | 来源仓 | 状态 |
+```console
+# 真算例：旧仓 SYN-ZHDQ 的 R09/R11/R12 观测 + 夹具档位控制值（退出码 1 = 有未闭环报警）
+$ speccalc check excavation-monitor --input samples/excavation-monitor/zhdq.json \
+        --basis samples/basis.json
+speccalc :: excavation-monitor 0.1.0 :: zhdq.json
+[rejected] SYN-TH-03.top_h_disp@R11 — 报警（未闭环）：… :: GB 50497-2019 alarm-values（2019）
+[rejected] SYN-TH-18.top_h_disp@R11 — 报警（未闭环）：… :: GB 50497-2019 alarm-values（2019）
+合计 587 条，阻断 5 条（ok=582 rejected=5）
+```
+
+| 器官（module） | 溯源 | 状态 |
 |---|---|---|
-| — | — | Stage 1 尚无器官迁入 |
+| `excavation-monitor` | 迁自 target-map ③ 行 | 已迁入 · 双控报警 + 频率时效 · [`docs`](docs/excavation-monitor.md) |
+| `pavement-mqi` | 迁自 target-map ③ 行 | 已迁入 · PCI / 等级 / 对策 / MQI · [`docs`](docs/pavement-mqi.md) |
+| `steel-member` | 迁自 target-map ③ 行 | 已迁入 · 焊缝 / 螺栓 / 轴压稳定（真条号）· [`docs`](docs/steel-member.md) |
 
 ## 为什么做这个
 
@@ -84,7 +98,7 @@ py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（95 项 = 旧套件 67 + speccalc 内核契约 28，零 API 依赖）
+# 运行测试（1108 项 = 旧套件 67 + 内核契约 28 + 器官 1013（excavation 322 / pavement 412 / steel 279），零 API 依赖）
 pytest -q -m "not packaging"     # 含打包实测的完整跑法见下方「安装形态」
 ```
 
@@ -134,7 +148,7 @@ py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key�
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
 │   │   ├── app/     应用代码
-│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约），共 95 项单元/集成测试
+│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约）+ 1013 项（器官），共 1108 项单元/集成测试
 │   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
 │   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据
