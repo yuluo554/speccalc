@@ -13,6 +13,10 @@ recursive-include code/backend/tools *.py
 recursive-include code/knowledge *.json
 recursive-include code/rules *.json
 recursive-include data *
+# Stage 1 新内核与它的契约测试：sdist 解包后仍要能跑测试
+recursive-include src/speccalc *.py
+include src/speccalc/py.typed
+recursive-include tests *.py
 # 运行产物与本地密钥不入源码包
 prune code/backend/webdata
 prune data/施工方案/自制样例/演示输出

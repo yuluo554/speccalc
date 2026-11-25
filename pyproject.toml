@@ -38,21 +38,27 @@ dev = ["pytest>=7.4"]
 
 [project.scripts]
 construction-check = "app.cli:main"
+# Stage 1 产品入口；construction-check 是过渡期旧入口，器官迁移完成后删除
+speccalc = "speccalc.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yuluo554/construction-drawing-plan-checker"
-Repository = "https://github.com/yuluo554/construction-drawing-plan-checker"
+Homepage = "https://github.com/yuluo554/speccalc"
+Repository = "https://github.com/yuluo554/speccalc"
 
 [tool.setuptools]
-# 源码布局：Python 包在 code/backend/app。
-# 运行期资产（知识库 / 危大阈值清单 / Web 静态文件 / 规则元数据）由 setup.py 的
-# build_py 钩子复制到 app/_data/，再经下面的 package-data 打进 wheel 与 sdist——
+# 双根布局（Stage 1 过渡）：
+#   ""        -> code/backend   旧包 app（含 setup.py 钩子铺进去的 app/_data）
+#   "speccalc"-> src/speccalc   新包（SKELETON-SPEC §1 的 src/ 形状）
+# 显式键对子包同样生效（setuptools 的 get_package_dir 按最长前缀回溯），
+# 所以 speccalc.core 解析到 src/speccalc/core。
+# 运行期资产（知识库 / 危大阈值清单 / Web 静态文件 / 规则元数据）仍由 setup.py 的
+# build_py 钩子复制到 app/_data/，再经 package-data 打进 wheel 与 sdist——
 # 保证 `pip install`（非 editable）之后 compliance / --rag / Web 都能真跑。
-package-dir = { "" = "code/backend" }
+package-dir = { "" = "code/backend", "speccalc" = "src/speccalc" }
 
 [tool.setuptools.packages.find]
-where = ["code/backend"]
-include = ["app", "app.*"]
+where = ["code/backend", "src"]
+include = ["app", "app.*", "speccalc", "speccalc.*"]
 # app/_data 是构建钩子铺进去的**数据**目录（无 __init__.py）。若让 find 扫到它，
 # setuptools 会报 "app._data.static.vendor is neither a Python module nor a package"
 # 之类的警告，并可能把它当命名空间包处理。这里显式排除（数据仍由 package-data 收）。
@@ -61,9 +67,10 @@ exclude = ["app._data", "app._data.*"]
 [tool.setuptools.package-data]
 # app/_data 是构建产物（不入库）；这里只声明"要收进包"的模式。
 app = ["_data/**/*", "_data/**/**/*"]
+speccalc = ["py.typed", "data/*.json"]
 
 [tool.pytest.ini_options]
-testpaths = ["code/backend/tests"]
+testpaths = ["code/backend/tests", "tests"]
 addopts = "-ra"
 markers = [
     # 慢测试：真构建 wheel + 建临时 venv + 真装。默认也跑；CI 的 packaging job 必须显式跑。

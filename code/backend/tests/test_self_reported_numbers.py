@@ -29,22 +29,27 @@ def read(path):
 
 
 def count_tests():
-    """统计 tests/ 下的测试用例数。
+    """统计两个测试根下的测试用例数（旧套件 + Stage 1 内核契约）。
 
-    口径：`def test_*` 函数数。**测试文件里不要用 parametrize**——它会让"函数数"
-    与实际收集数不等，本门就会失真。需要多组输入时写成独立函数（见
-    test_cli_exit_codes.py 的两条 legacy-codepage 用例）。
+    口径：`def test_*` 函数数，根部两处都算：`code/backend/tests/` 与 `tests/`
+    （pytest 的 `testpaths` 同时列了这两个根）。**测试文件里不要用 parametrize**
+    ——它会让"函数数"与实际收集数不等，本门就会失真。需要多组输入时写成独立函数
+    （见 test_cli_exit_codes.py 的两条 legacy-codepage 用例）。
     """
     total = 0
-    tdir = os.path.join(BACKEND, "tests")
-    for name in sorted(os.listdir(tdir)):
-        if not (name.startswith("test_") and name.endswith(".py")):
+    # Stage 1 起有两个测试根：旧套件 code/backend/tests/ 与产品根 tests/（内核契约）。
+    roots = (os.path.join(BACKEND, "tests"), os.path.join(REPO, "tests"))
+    for tdir in roots:
+        if not os.path.isdir(tdir):
             continue
-        src = read(os.path.join(tdir, name))
-        total += len(re.findall(r"^def (test_\w+)", src, re.M))
-        # 只查"用作装饰器"的情况（本文件只提到这个词、并未使用，不算）
-        assert not re.search(r"^\s*@\S*parametrize", src, re.M), \
-            "%s 使用了 parametrize 装饰器，会让测试计数口径失真；请拆成独立函数" % name
+        for name in sorted(os.listdir(tdir)):
+            if not (name.startswith("test_") and name.endswith(".py")):
+                continue
+            src = read(os.path.join(tdir, name))
+            total += len(re.findall(r"^def (test_\w+)", src, re.M))
+            # 只查"用作装饰器"的情况（本文件只提到这个词、并未使用，不算）
+            assert not re.search(r"^\s*@\S*parametrize", src, re.M), \
+                "%s 使用了 parametrize 装饰器，会让测试计数口径失真；请拆成独立函数" % name
     return total
 
 

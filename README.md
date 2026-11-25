@@ -2,7 +2,31 @@
 
 > 面向土建施工场景的 AI 校核工具：把施工图（PDF/DXF）与施工方案（DOCX）各自解析为**可溯源的"工程参数卡"**，自动执行 **一致性比对 / 危大工程识别 / 方案合规检查**，输出每条带证据定位的校核报告（DOCX）。
 
-[![CI](https://github.com/yuluo554/construction-drawing-plan-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/construction-drawing-plan-checker/actions/workflows/ci.yml) [![python](https://img.shields.io/badge/python-3.10%2B-blue)]() [![license](https://img.shields.io/badge/license-MIT-green)]() [![Built with ZCode](https://img.shields.io/badge/Built%20with-ZCode-7c3aed)](https://github.com/yuluo554/construction-drawing-plan-checker#开发方式)
+[![CI](https://github.com/yuluo554/speccalc/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/speccalc/actions/workflows/ci.yml) [![python](https://img.shields.io/badge/python-3.10%2B-blue)]() [![license](https://img.shields.io/badge/license-MIT-green)]() [![Built with ZCode](https://img.shields.io/badge/Built%20with-ZCode-7c3aed)](https://github.com/yuluo554/speccalc#开发方式)
+
+---
+
+## speccalc（Stage 1 内核，与 construction-check 并存）
+
+本仓正在收敛成 **speccalc**：规范计算书引擎 —— 输入构件参数，按规范条款算一遍，
+输出**每条都挂着 `code + clause + version`** 的计算书；`ok` 与 `rejected` 都必须有依据，
+凭空算出的「合格」和不合格一样不可复核。
+
+内核骨架已就位（`src/speccalc/`）。旧包 `app`（`code/backend/app`）、旧入口
+`construction-check` 与 `setup.py` 的资产钩子在过渡期内原样保留。
+
+```console
+$ speccalc list
+（未注册任何器官）
+```
+
+契约（唯一入口 / 计算书 / 退出码）见 [`docs/speccalc.md`](docs/speccalc.md)。
+与其余三个产品共用 `SKELETON-SPEC`：账本 = **计算书**（`ok` / `rejected`），
+`basis_ref` = 规范条款（`code` + `clause` + `version`），退出码 `0/1/2/3`。
+
+| 器官（module） | 来源仓 | 状态 |
+|---|---|---|
+| — | — | Stage 1 尚无器官迁入 |
 
 ## 为什么做这个
 
@@ -44,8 +68,8 @@ flowchart LR
 环境要求：Python **3.10+**（CI 覆盖 3.10 / 3.12 × Ubuntu / Windows），可选大模型 API（阿里云百炼等 OpenAI 兼容接口）。
 
 ```bash
-git clone https://github.com/yuluo554/construction-drawing-plan-checker.git
-cd construction-drawing-plan-checker
+git clone https://github.com/yuluo554/speccalc.git
+cd speccalc
 pip install -e ".[dev]"          # 也可 cd code/backend && pip install -r ../requirements.txt
 
 # 装完先自检：确认知识库/阈值清单/Web 静态文件都就位
@@ -60,7 +84,7 @@ py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（67 项，零 API 依赖；README 数字由 test_self_reported_numbers.py 守门）
+# 运行测试（95 项 = 旧套件 67 + speccalc 内核契约 28，零 API 依赖）
 pytest -q -m "not packaging"     # 含打包实测的完整跑法见下方「安装形态」
 ```
 
@@ -110,7 +134,7 @@ py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key�
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
 │   │   ├── app/     应用代码
-│   │   ├── tests/   67 项单元/集成测试
+│   │   ├── tests/   67 项（旧套件）+ tests/ 28 项（内核契约），共 95 项单元/集成测试
 │   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
 │   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据
