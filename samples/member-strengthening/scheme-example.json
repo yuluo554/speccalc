@@ -1,0 +1,64 @@
+{
+  "mode": "scheme",
+  "case_id": "SCHEME-1",
+  "scheme": {
+    "doc_name": "某加固方案.docx",
+    "source_text": "本加固方案采用碳纤维布加固梁，并进行植筋锚固。方案包含检测鉴定结论：已进行安全性鉴定并出具鉴定报告。加固前卸载：设置临时支撑并卸除活荷载。结构胶采用 A 级胶粘剂：钢对钢拉伸抗剪强度标准值 15.8MPa。植筋锚固深度设计值 320mm；植筋直径 12mm，钢筋牌号 HRB400，混凝土强度等级 C40，胶粘剂等级 A。",
+    "appraisal_first": {
+      "kind": "鉴定结论",
+      "quote": "检测鉴定结论：已进行安全性鉴定并出具鉴定报告",
+      "para": 1
+    },
+    "unloading": [
+      {
+        "kind": "卸载",
+        "quote": "加固前卸载：设置临时支撑并卸除活荷载",
+        "para": 1
+      }
+    ],
+    "adhesive_indices": [
+      {
+        "kind": "钢对钢拉伸抗剪强度标准值",
+        "value": 15.8,
+        "unit": "MPa",
+        "label": "A",
+        "quote": "钢对钢拉伸抗剪强度标准值 15.8MPa",
+        "para": 1
+      }
+    ],
+    "anchor_depths": [
+      {
+        "kind": "植筋",
+        "value": 320.0,
+        "unit": "mm",
+        "quote": "锚固深度设计值 320mm",
+        "para": 1
+      }
+    ],
+    "design_params": [
+      {
+        "kind": "植筋直径",
+        "value": 12.0,
+        "unit": "mm",
+        "quote": "植筋直径 12mm"
+      },
+      {
+        "kind": "钢筋牌号",
+        "label": "HRB400",
+        "quote": "钢筋牌号 HRB400"
+      },
+      {
+        "kind": "混凝土强度等级",
+        "value": 40.0,
+        "unit": "C",
+        "label": "C40",
+        "quote": "混凝土强度等级 C40"
+      },
+      {
+        "kind": "胶粘剂等级",
+        "label": "A",
+        "quote": "胶粘剂等级 A"
+      }
+    ]
+  }
+}

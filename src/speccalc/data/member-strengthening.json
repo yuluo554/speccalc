@@ -1,0 +1,1457 @@
+{
+  "schema": "member-strengthening/1",
+  "organ": "member-strengthening",
+  "version": "0.1.0",
+  "source": "target-map ③ 行（仓库 #45）",
+  "codes": {
+    "gb50367": "GB 50367-2013",
+    "gb55021": "GB 55021-2021",
+    "gb50010": "GB/T 50010-2010（2024年版，混凝土结构设计标准）",
+    "gb50728": "GB 50728-2011",
+    "jgj145": "JGJ 145-2013"
+  },
+  "clause_inventory": {
+    "total": 52,
+    "verified": 51,
+    "pending": [
+      "JGJ145-2013-6.3"
+    ],
+    "standards": [
+      "GB/T 50010-2010（2024年版，混凝土结构设计标准）",
+      "GB 50367-2013",
+      "GB 50728-2011",
+      "GB 55021-2021",
+      "JGJ 145-2013"
+    ],
+    "note": "来源仓条款库 52 条（51 已核对 / 1 待核对 JGJ145-2013-6.3）；本器官所需条款全部已核对，待核对项只作为熔断留痕记录，不进入计算路径。",
+    "by_standard_selected": {
+      "GB/T 50010-2010（2024年版，混凝土结构设计标准）": 1,
+      "GB 50367-2013": 27,
+      "GB 55021-2021": 12
+    },
+    "selected_total": 40,
+    "selected_pending": []
+  },
+  "clauses": {
+    "gb50010.4.2.3": {
+      "code": "GB/T 50010-2010（2024年版，混凝土结构设计标准）",
+      "clause": "4.2.3",
+      "status": "已核对",
+      "topic": "普通钢筋强度设计值（表4.2.3-1）"
+    },
+    "cfrp.10.2.1": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.1",
+      "status": "已核对",
+      "topic": "粘贴纤维复合材加固受弯构件的基本假定"
+    },
+    "cfrp.10.2.2": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.2",
+      "status": "已核对",
+      "topic": "相对界限受压区高度 ξb,f = 0.85ξb"
+    },
+    "cfrp.10.2.3": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.3",
+      "status": "已核对",
+      "topic": "正截面受弯承载力（式10.2.3-1~4）"
+    },
+    "cfrp.10.2.4": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.4",
+      "status": "已核对",
+      "topic": "多层粘贴厚度折减（式10.2.4-2）"
+    },
+    "cfrp.10.2.8": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.8",
+      "status": "已核对",
+      "topic": "滞后应变 εf0（式10.2.8）与表10.2.8"
+    },
+    "cfrp.10.2.10": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.10",
+      "status": "已核对",
+      "topic": "受弯承载力提高幅度 ≤ 40%"
+    },
+    "cfrp.10.2.11": {
+      "code": "GB 50367-2013",
+      "clause": "10.2.11",
+      "status": "已核对",
+      "topic": "加固后受剪承载力验算要求"
+    },
+    "plate.9.2.1": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.1",
+      "status": "已核对",
+      "topic": "粘贴钢板加固受弯构件的基本假定"
+    },
+    "plate.9.2.2": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.2",
+      "status": "已核对",
+      "topic": "相对界限受压区高度 ξb,sp = 0.85ξb"
+    },
+    "plate.9.2.3": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.3",
+      "status": "已核对",
+      "topic": "正截面受弯承载力（式9.2.3-1~4）"
+    },
+    "plate.9.2.5": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.5",
+      "status": "已核对",
+      "topic": "钢板与混凝土之间粘结构造要求"
+    },
+    "plate.9.2.6": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.6",
+      "status": "已核对",
+      "topic": "粘贴钢板加固构造要求"
+    },
+    "plate.9.2.9": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.9",
+      "status": "已核对",
+      "topic": "滞后应变 εsp,0（式9.2.9）与表9.2.9"
+    },
+    "plate.9.2.11": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.11",
+      "status": "已核对",
+      "topic": "受弯承载力提高幅度 ≤ 40%"
+    },
+    "plate.9.2.12": {
+      "code": "GB 50367-2013",
+      "clause": "9.2.12",
+      "status": "已核对",
+      "topic": "加固后受剪承载力验算要求"
+    },
+    "enlarge.5.2.3": {
+      "code": "GB 50367-2013",
+      "clause": "5.2.3",
+      "status": "已核对",
+      "topic": "增大截面受弯承载力（式5.2.3-1~3）"
+    },
+    "enlarge.5.2.4": {
+      "code": "GB 50367-2013",
+      "clause": "5.2.4",
+      "status": "已核对",
+      "topic": "相对界限受压区高度 ξb 与初始应变（式5.2.4-1~3）"
+    },
+    "enlarge.5.2.5": {
+      "code": "GB 50367-2013",
+      "clause": "5.2.5",
+      "status": "已核对",
+      "topic": "原截面超筋时以 σs0 替代 fy0（式5.2.5）"
+    },
+    "anchor.15.2.1": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.1",
+      "status": "已核对",
+      "topic": "植筋锚固设计的一般规定"
+    },
+    "anchor.15.2.2": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.2",
+      "status": "已核对",
+      "topic": "锚固深度设计值 ld ≥ ψN·ψae·ls（式15.2.2-2）"
+    },
+    "anchor.15.2.3": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.3",
+      "status": "已核对",
+      "topic": "基本锚固深度 ls = 0.2·αspt·d·fy/fbd（式15.2.3）"
+    },
+    "anchor.15.2.4": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.4",
+      "status": "已核对",
+      "topic": "粘结抗剪强度设计值 fbd（表15.2.4）"
+    },
+    "anchor.15.2.5": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.5",
+      "status": "已核对",
+      "topic": "锚固深度修正系数 ψN = ψbr·ψw·ψT（式15.2.5）"
+    },
+    "anchor.15.2.6": {
+      "code": "GB 50367-2013",
+      "clause": "15.2.6",
+      "status": "已核对",
+      "topic": "锚固深度必须经设计计算确定，不得按拉拔试验值或厂商推荐值采用"
+    },
+    "enlarge.5.1.5": {
+      "code": "GB 50367-2013",
+      "clause": "5.1.5",
+      "status": "已核对",
+      "topic": "增大截面加固时卸除活荷载的构造要求"
+    },
+    "cfrp.4.3.4": {
+      "code": "GB 50367-2013",
+      "clause": "4.3.4",
+      "status": "已核对",
+      "topic": "碳纤维复合材抗拉强度设计值（表4.3.4-1）"
+    },
+    "cfrp.4.3.5": {
+      "code": "GB 50367-2013",
+      "clause": "4.3.5",
+      "status": "已核对",
+      "topic": "碳纤维复合材弹性模量及拉应变设计值（表4.3.5）"
+    },
+    "gb55021.1.0.3": {
+      "code": "GB 55021-2021",
+      "clause": "1.0.3",
+      "status": "已核对",
+      "topic": "先检测、鉴定，后加固设计、施工与验收"
+    },
+    "gb55021.2.0.2": {
+      "code": "GB 55021-2021",
+      "clause": "2.0.2",
+      "status": "已核对",
+      "topic": "应进行鉴定的七种情形"
+    },
+    "gb55021.2.0.3": {
+      "code": "GB 55021-2021",
+      "clause": "2.0.3",
+      "status": "已核对",
+      "topic": "应进行加固的情形"
+    },
+    "gb55021.2.0.4": {
+      "code": "GB 55021-2021",
+      "clause": "2.0.4",
+      "status": "已核对",
+      "topic": "鉴定应同时进行安全性鉴定和抗震鉴定"
+    },
+    "gb55021.2.0.6": {
+      "code": "GB 55021-2021",
+      "clause": "2.0.6",
+      "status": "已核对",
+      "topic": "加固必须按程序设计，鉴定报告不得直接用于施工"
+    },
+    "gb55021.2.0.7": {
+      "code": "GB 55021-2021",
+      "clause": "2.0.7",
+      "status": "已核对",
+      "topic": "加固施工必须进行质量检验和竣工验收"
+    },
+    "gb55021.6.1.2": {
+      "code": "GB 55021-2021",
+      "clause": "6.1.2",
+      "status": "已核对",
+      "topic": "加固设计应明确用途、使用环境与设计工作年限"
+    },
+    "gb55021.6.1.5": {
+      "code": "GB 55021-2021",
+      "clause": "6.1.5",
+      "status": "已核对",
+      "topic": "加固前应卸除或部分卸除作用在结构上的荷载"
+    },
+    "gb55021.6.1.8": {
+      "code": "GB 55021-2021",
+      "clause": "6.1.8",
+      "status": "已核对",
+      "topic": "被加固构件混凝土强度与正拉粘结强度下限"
+    },
+    "gb55021.6.1.9": {
+      "code": "GB 55021-2021",
+      "clause": "6.1.9",
+      "status": "已核对",
+      "topic": "结构胶粘结加固应验算受弯与受剪承载力"
+    },
+    "gb55021.6.2.3": {
+      "code": "GB 55021-2021",
+      "clause": "6.2.3",
+      "status": "已核对",
+      "topic": "植筋与锚栓的钢材构造要求"
+    },
+    "gb55021.B.0.2": {
+      "code": "GB 55021-2021",
+      "clause": "B.0.2",
+      "status": "已核对",
+      "topic": "结构胶粘剂钢对钢拉伸抗剪强度标准值（表B.0.2）"
+    }
+  },
+  "constants": {
+    "eps_cu": 0.0033,
+    "capacity_increase_max": 0.4,
+    "alpha_s": 0.9,
+    "alpha_f_adjust": 0.9,
+    "fbd_fast_cure_factor": 0.8,
+    "psi_ae_default": 1.0,
+    "psi_br_default": 1.0,
+    "psi_w_default": 1.1,
+    "psi_T_default": 1.0,
+    "fc_c50_limit": 23.1,
+    "es_default": 200000.0,
+    "esp_default": 206000.0,
+    "ratio_tol": 1e-09
+  },
+  "tables": {
+    "alpha_f": {
+      "rho_te_bands": [
+        0.007,
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.06
+      ],
+      "single_row": [
+        0.7,
+        0.9,
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "double_row": [
+        0.75,
+        1.0,
+        1.25,
+        1.3,
+        1.35,
+        1.4
+      ]
+    },
+    "alpha_spt": {
+      "columns": [
+        "c25_f6",
+        "c25_f810",
+        "c30_f6",
+        "c30_f810",
+        "c35_ge6",
+        "c40_ge6"
+      ],
+      "rows": {
+        "le20": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "d25": [
+          1.1,
+          1.05,
+          1.05,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "d32": [
+          1.25,
+          1.15,
+          1.15,
+          1.1,
+          1.1,
+          1.05
+        ]
+      }
+    },
+    "fbd": [
+      {
+        "grades": [
+          "A",
+          "B"
+        ],
+        "min_s1_over_d": 5.0,
+        "min_s2_over_d": 2.5,
+        "values": {
+          "C20": 2.3,
+          "C25": 2.7,
+          "C30": 3.7,
+          "C40": 4.0,
+          "C60": 4.5
+        }
+      },
+      {
+        "grades": [
+          "A"
+        ],
+        "min_s1_over_d": 6.0,
+        "min_s2_over_d": 3.0,
+        "values": {
+          "C20": 2.3,
+          "C25": 2.7,
+          "C30": 4.0,
+          "C40": 4.5,
+          "C60": 5.0
+        }
+      },
+      {
+        "grades": [
+          "A"
+        ],
+        "min_s1_over_d": 7.0,
+        "min_s2_over_d": 3.5,
+        "values": {
+          "C20": 2.3,
+          "C25": 2.7,
+          "C30": 4.5,
+          "C40": 5.0,
+          "C60": 5.5
+        }
+      }
+    ],
+    "ff_cfrp": {
+      "carbon": {
+        "fabric": {
+          "I": {
+            "general": 2300.0,
+            "important": 1600.0
+          },
+          "II": {
+            "general": 2000.0,
+            "important": 1400.0
+          },
+          "III": {
+            "general": 1200.0
+          }
+        },
+        "plate": {
+          "I": {
+            "general": 1600.0,
+            "important": 1150.0
+          },
+          "II": {
+            "general": 1400.0,
+            "important": 1000.0
+          }
+        }
+      }
+    },
+    "ef_cfrp": {
+      "carbon": {
+        "fabric": {
+          "I": {
+            "Ef": 230000.0,
+            "eps_important": 0.007,
+            "eps_general": 0.01
+          },
+          "II": {
+            "Ef": 200000.0,
+            "eps_important": 0.007,
+            "eps_general": 0.01
+          },
+          "III": {
+            "Ef": 180000.0,
+            "eps_important": null,
+            "eps_general": null
+          }
+        },
+        "plate": {
+          "I": {
+            "Ef": 160000.0,
+            "eps_important": 0.007,
+            "eps_general": 0.01
+          },
+          "II": {
+            "Ef": 140000.0,
+            "eps_important": 0.007,
+            "eps_general": 0.01
+          }
+        }
+      }
+    },
+    "adhesive_limits": {
+      "steel_to_steel_shear_std_MPa_steel_pasting": {
+        "grade_A": 15,
+        "grade_B": 12,
+        "class_II": 18
+      },
+      "steel_to_steel_shear_std_MPa_frp_pasting": {
+        "grade_A": 14,
+        "grade_B": 10,
+        "class_II": 16
+      }
+    },
+    "rebar_fy": {
+      "HPB300": 270,
+      "HRB400": 360,
+      "HRBF400": 360,
+      "RRB400": 360,
+      "HRB500": 435,
+      "HRBF500": 435
+    }
+  },
+  "modules": {
+    "cfrp_beam_flexure": {
+      "title": "粘贴碳纤维布加固梁正截面受弯承载力验算",
+      "description": "GB 50367-2013 式(10.2.3-1~4)/式(10.2.8)/式(10.2.2)/式(10.2.10)；M0>0 激活二次受力（滞后应变 εf0）路径。ff/ef 按表4.3.4/表4.3.5 取值（品种/等级/结构类别）。",
+      "required_clauses": [
+        "cfrp.4.3.4",
+        "cfrp.4.3.5",
+        "cfrp.10.2.1",
+        "cfrp.10.2.2",
+        "cfrp.10.2.3",
+        "cfrp.10.2.4",
+        "cfrp.10.2.8",
+        "cfrp.10.2.10",
+        "cfrp.10.2.11"
+      ],
+      "params": {
+        "b": {
+          "meaning": "矩形截面宽度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "h": {
+          "meaning": "矩形截面高度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fc": {
+          "meaning": "原构件混凝土轴心抗压强度设计值 fc0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "As": {
+          "meaning": "原截面受拉钢筋截面面积 As0",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fy": {
+          "meaning": "原截面受拉钢筋抗拉强度设计值 fy0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Afe": {
+          "meaning": "碳纤维复合材有效截面面积",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Ecf": {
+          "meaning": "碳纤维复合材弹性模量（与 ff/ef 一致性提示用）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "M0": {
+          "meaning": "加固前弯矩标准值 M0k（0=一次受力，>0=二次受力）",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          }
+        },
+        "M": {
+          "meaning": "加固后弯矩设计值",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "ff": {
+          "meaning": "纤维复合材抗拉强度设计值（表4.3.4）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "ef": {
+          "meaning": "纤维复合材拉应变设计值 εf（表4.3.5）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "as": {
+          "meaning": "受拉钢筋合力点至受拉边缘距离（h0=h−as）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Asc": {
+          "meaning": "原受压钢筋截面面积 A's0（无则 0）",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "ap": {
+          "meaning": "受压钢筋合力点至受压边缘距离 a′（Asc>0 时必填）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "fyp": {
+          "meaning": "受压钢筋抗压强度设计值 f'y0（默认取 fy）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "xi_b": {
+          "meaning": "加固前相对界限受压区高度 ξb（按 GB 50010；缺省则跳过 ξb,f 检查）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "alpha1": {
+          "meaning": "受压区混凝土矩形应力图应力值系数 α1（≤C50 取 1.0，C50~C80 内插）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "Es": {
+          "meaning": "原钢筋弹性模量（默认 2.0e5，HRB400 常用值）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "rho_te": {
+          "meaning": "有效受拉钢筋配筋率 ρte（默认按 Ate=0.5bh 计算）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "rebar_rows": {
+          "meaning": "受拉钢筋排数（1=单排，2=双排，查表10.2.8 用）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "sigma_s0": {
+          "meaning": "原构件钢筋应力 σs0（≤150 且 ρte≤0.05 时 αf×0.9，表10.2.8 注2）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "nf": {
+          "meaning": "纤维织物层数（提供 nf 与 tf 时按式(10.2.4-2)折减 km）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "tf": {
+          "meaning": "纤维织物单层厚度（与 nf 同时提供）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        }
+      }
+    },
+    "post_rebar_anchor": {
+      "title": "植筋锚固深度验算",
+      "description": "GB 50367-2013 式(15.2.2-2)/式(15.2.3)/式(15.2.5)；终判 ld ≥ ψN·ψae·ls。αspt/fbd 可直接给定或走查表路径（cover+stirrup_dia / adhesive_grade+s1+s2+fc_grade）。",
+      "required_clauses": [
+        "anchor.15.2.1",
+        "anchor.15.2.2",
+        "anchor.15.2.3",
+        "anchor.15.2.4",
+        "anchor.15.2.5",
+        "anchor.15.2.6"
+      ],
+      "params": {
+        "fc": {
+          "meaning": "基材混凝土轴心抗压强度设计值（快固型调整按基材等级>C30 判定）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fy": {
+          "meaning": "植筋用钢筋抗拉强度设计值",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "d": {
+          "meaning": "植筋公称直径",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "ld": {
+          "meaning": "提供的植筋锚固深度设计值",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "alpha_spt": {
+          "meaning": "劈裂影响计算系数 αspt（直接给定；与查表路径互斥）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "fbd": {
+          "meaning": "胶粘剂粘结抗剪强度设计值（直接给定；与查表路径互斥）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "cover": {
+          "meaning": "混凝土保护层厚度 c（查表15.2.3 路径）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "stirrup_dia": {
+          "meaning": "箍筋直径（查表15.2.3 路径；锚固深度范围内间距不应大于 100mm）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "adhesive_grade": {
+          "meaning": "胶粘剂等级 1=A 级 / 2=B 级（查表15.2.4 路径）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "s1": {
+          "meaning": "植筋间距 s1（查表15.2.4 路径）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "s2": {
+          "meaning": "植筋边距 s2（查表15.2.4 路径）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "fc_grade": {
+          "meaning": "基材混凝土强度等级代码（查表15.2.4 路径：20/25/30/40/60→C20~C60）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "psi_br": {
+          "meaning": "构件受力状态影响系数（1.50 悬挑 / 1.15 非悬挑重要构件接长 / 1.00 其他；默认 1.00）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "psi_w": {
+          "meaning": "孔壁潮湿影响系数（耐潮湿型按产品说明书且 ≥1.1；默认 1.1）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "psi_T": {
+          "meaning": "使用环境温度影响系数（T≤60℃ 取 1.0；默认 1.0）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "psi_ae": {
+          "meaning": "位移延性要求修正系数（抗震设防区按 15.2.2 取 1.10/1.25；默认 1.00）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "fast_cure": {
+          "meaning": "快固型胶粘剂（1=是，0=否；基材>C30 时 fbd×0.8）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        }
+      }
+    },
+    "section_enlarge_flexure": {
+      "title": "增大截面加固法受弯承载力验算（受拉区加固）",
+      "description": "GB 50367-2013 式(5.2.3-1~3)/式(5.2.4-1~3)/式(5.2.5)；αs=0.9；M0>0 时按式(5.2.4-2/3)计入初始应变 εs0/εs1 对 ξb 的折减。受拉区加固，fc2 不进入正截面计算。",
+      "required_clauses": [
+        "enlarge.5.1.5",
+        "enlarge.5.2.3",
+        "enlarge.5.2.4",
+        "enlarge.5.2.5"
+      ],
+      "params": {
+        "b": {
+          "meaning": "原截面宽度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "h": {
+          "meaning": "原截面高度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "bf": {
+          "meaning": "新增截面宽度（受拉区加固不进入正截面计算，仅记录）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "hf": {
+          "meaning": "新增截面高度（受拉侧新增层厚度）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fc": {
+          "meaning": "原构件混凝土轴心抗压强度设计值 fc0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fc2": {
+          "meaning": "新增混凝土强度设计值（受拉区加固不进入正截面计算，仅记录）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "As": {
+          "meaning": "原受拉钢筋截面面积 As0",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fy": {
+          "meaning": "原钢筋抗拉强度设计值 fy0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "As2": {
+          "meaning": "新增受拉钢筋截面面积 As（公式符号）",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fy2": {
+          "meaning": "新增钢筋抗拉强度设计值 fy（公式符号）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "as": {
+          "meaning": "原受拉钢筋合力点至原截面受拉边缘距离（h01=h−as）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "as2": {
+          "meaning": "新增受拉钢筋合力点至加固后截面受拉边缘距离（h0=h+hf−as2）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "M0": {
+          "meaning": "加固前弯矩标准值 M0k（0=一次受力）",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          }
+        },
+        "M": {
+          "meaning": "加固后弯矩设计值",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Asc": {
+          "meaning": "原受压钢筋截面面积 A's0（无则 0）",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "ap": {
+          "meaning": "受压钢筋合力点至受压边缘距离 a′（Asc>0 时必填）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "fyp": {
+          "meaning": "原钢筋抗压强度设计值 f'y0（默认取 fy）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "alpha1": {
+          "meaning": "受压区混凝土矩形应力图应力值系数 α1（≤C50 取 1.0）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "beta1": {
+          "meaning": "计算系数 β1（≤C50 取 0.80，C80 取 0.74，内插）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "Es": {
+          "meaning": "钢筋弹性模量（默认 2.0e5，HRB400 级常用值）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "xi_b0": {
+          "meaning": "原截面相对界限受压区高度 ξb0（提供时执行式(5.2.5) σs0 复核）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        }
+      }
+    },
+    "steel_plate_flexure": {
+      "title": "粘贴钢板加固受弯承载力验算",
+      "description": "GB 50367-2013 式(9.2.3-1~4)/式(9.2.9)/式(9.2.2)/式(9.2.11)；M0>0 激活二次受力（滞后应变 εsp,0）路径。fp 为钢板抗拉强度设计值。",
+      "required_clauses": [
+        "plate.9.2.1",
+        "plate.9.2.2",
+        "plate.9.2.3",
+        "plate.9.2.5",
+        "plate.9.2.6",
+        "plate.9.2.9",
+        "plate.9.2.11",
+        "plate.9.2.12"
+      ],
+      "params": {
+        "b": {
+          "meaning": "矩形截面宽度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "h": {
+          "meaning": "矩形截面高度",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fc": {
+          "meaning": "原构件混凝土轴心抗压强度设计值 fc0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "As": {
+          "meaning": "原构件受拉钢筋截面面积 As0",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fy": {
+          "meaning": "原构件受拉钢筋抗拉强度设计值 fy0",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Ap": {
+          "meaning": "受拉钢板截面面积 Asp",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "fp": {
+          "meaning": "加固钢板抗拉强度设计值 fsp",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "M0": {
+          "meaning": "加固前弯矩标准值 M0k（0=一次受力，>0=二次受力）",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          }
+        },
+        "M": {
+          "meaning": "加固后弯矩设计值",
+          "unit": "kN·m",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "as": {
+          "meaning": "受拉钢筋合力点至受拉边缘距离（h0=h−as）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          }
+        },
+        "Apc": {
+          "meaning": "受压钢板截面面积 A'sp（无则 0）",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "ap": {
+          "meaning": "受压钢筋合力点至受压边缘距离 a′（Asc>0 时必填）",
+          "unit": "mm",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "Asc": {
+          "meaning": "原构件受压钢筋截面面积 A's0（无则 0）",
+          "unit": "mm2",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "fyp": {
+          "meaning": "受压钢筋抗压强度设计值 f'y0（默认取 fy）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "xi_b": {
+          "meaning": "加固前相对界限受压区高度 ξb（按 GB 50010；缺省则跳过 ξb,sp 检查）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "alpha1": {
+          "meaning": "受压区混凝土矩形应力图应力值系数 α1（≤C50 取 1.0）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": false
+          },
+          "required": false
+        },
+        "Es": {
+          "meaning": "原钢筋弹性模量（默认 2.0e5，HRB400 级常用值）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "Esp": {
+          "meaning": "钢板弹性模量 Esp（默认 2.06e5，Q235 常用值）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "rho_te": {
+          "meaning": "有效受拉钢筋配筋率 ρte（默认按 Ate=0.5bh 计算）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "rebar_rows": {
+          "meaning": "受拉钢筋排数（1=单排，2=双排，查表9.2.9 用）",
+          "unit": "-",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        },
+        "sigma_s0": {
+          "meaning": "原构件钢筋应力 σs0（≤150 且 ρte≤0.05 时 αsp×0.9，表9.2.9 注2）",
+          "unit": "MPa",
+          "range": {
+            "min": 0,
+            "exclusive": true
+          },
+          "required": false
+        }
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "R-ADH-001",
+      "name": "结构胶粘剂钢对钢拉伸抗剪强度标准值核查",
+      "category": "adhesive",
+      "only_if_keywords": [
+        "结构胶",
+        "胶粘剂",
+        "建筑结构胶",
+        "粘钢胶",
+        "碳纤维浸渍胶",
+        "植筋胶"
+      ],
+      "check_type": "param_range",
+      "target": "adhesive_indices[index=钢对钢拉伸抗剪强度标准值]",
+      "severity": "fail",
+      "message": "结构胶粘剂钢对钢拉伸抗剪强度标准值低于规范限值或未标注",
+      "advice": "按 GB 55021-2021 附录B 表B.0.2-1/-2 核对：粘贴钢材用 I 类胶 A 级 ≥15MPa、B 级 ≥12MPa；粘贴纤维复合材用 I 类胶 A 级 ≥14MPa、B 级 ≥10MPa（标准值，(23±2)℃、(50±5)%RH）。重要构件应采用 A 级胶（GB 50367-2013 第4.4.1条），且胶的性能应符合 GB 50728-2011 第4.2.2条鉴定要求。",
+      "clause_key": "gb55021.B.0.2",
+      "status": "已核对",
+      "support_clause_keys": []
+    },
+    {
+      "id": "R-ANCH-001",
+      "name": "植筋锚固深度核查",
+      "category": "anchoring",
+      "only_if_keywords": [
+        "锚固深度",
+        "锚固长度",
+        "植筋深度",
+        "锚栓"
+      ],
+      "check_type": "param_range",
+      "target": "anchor_depths",
+      "severity": "fail",
+      "message": "植筋锚固深度低于规范计算要求或未标注",
+      "advice": "按 GB 50367-2013 第15.2.3条核对：基本锚固深度 ls=0.2·αspt·d·fy/fbd，锚固深度设计值尚应乘以 ψN（第15.2.5条）与抗震修正 ψae（第15.2.2条）。锚固深度必须经设计计算确定，不得按短期拉拔试验值或厂商推荐值采用（第15.2.6条）。",
+      "clause_key": "anchor.15.2.3",
+      "status": "已核对",
+      "support_clause_keys": [
+        "anchor.15.2.3",
+        "anchor.15.2.4",
+        "anchor.15.2.5",
+        "anchor.15.2.2",
+        "gb50010.4.2.3"
+      ]
+    },
+    {
+      "id": "R-APP-001",
+      "name": "先鉴定后加固程序核查",
+      "category": "appraisal",
+      "only_if_keywords": [
+        "加固方案",
+        "加固设计",
+        "加固施工"
+      ],
+      "check_type": "checklist",
+      "target": "appraisal_first",
+      "severity": "fail",
+      "message": "加固方案缺少检测鉴定结论/依据鉴定结果的环节（先鉴定、后加固）",
+      "advice": "GB 55021-2021 第1.0.3条（全文强制）：既有建筑的鉴定与加固应遵循先检测、鉴定，后加固设计、施工与验收的原则；第2.0.6条要求按程序进行加固设计、鉴定报告不得直接用于施工。方案应包含检测鉴定结论章节并注明鉴定依据与鉴定机构。",
+      "clause_key": "gb55021.1.0.3",
+      "status": "已核对",
+      "support_clause_keys": []
+    },
+    {
+      "id": "R-CONST-001",
+      "name": "加固前卸载/支撑构造措施核查",
+      "category": "unloading",
+      "only_if_keywords": [
+        "增大截面",
+        "粘贴钢板",
+        "碳纤维"
+      ],
+      "check_type": "param_required",
+      "target": "unloading",
+      "severity": "fail",
+      "message": "加固方案未按规范要求提出加固前卸除或部分卸除荷载的构造措施",
+      "advice": "GB 55021-2021 第6.1.5条（全文强制）：加固前应按设计的规定卸除或部分卸除作用在结构上的荷载；GB 50367-2013 第5.1.5条：增大截面加固时应卸除或大部分卸除活荷载。方案应写明卸载方式、卸载量与临时支撑要求。",
+      "clause_key": "gb55021.6.1.5",
+      "status": "已核对",
+      "support_clause_keys": []
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "GB55021-1.0.3",
+      "clause_key": "gb55021.1.0.3",
+      "gist": "先检测、鉴定，后加固设计、施工与验收：既有建筑的鉴定与加固应遵循此程序原则（全文强制）。",
+      "check_mode": "manual",
+      "keywords": [
+        "鉴定",
+        "检测",
+        "检测鉴定"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-2.0.2",
+      "clause_key": "gb55021.2.0.2",
+      "gist": "应进行鉴定的七种情形：达到设计工作年限继续使用；改建扩建移位或用途/环境改变前；原设计未考虑抗震设防或设防要求提高；遭受灾害或事故后；存在较严重质量缺陷或损伤/疲劳/变形/振动影响/毗邻施工影响；日常使用发现安全隐患；有要求需质量评价。",
+      "check_mode": "manual",
+      "keywords": [
+        "鉴定",
+        "改变用途",
+        "灾后",
+        "安全隐患"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-2.0.3",
+      "clause_key": "gb55021.2.0.3",
+      "gist": "应进行加固的情形：经安全性鉴定确认需要提高结构构件安全性；经抗震鉴定确认需要加强整体性、改善构件受力状况、提高综合抗震能力。",
+      "check_mode": "manual",
+      "keywords": [
+        "加固",
+        "安全性鉴定",
+        "抗震鉴定"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-2.0.4",
+      "clause_key": "gb55021.2.0.4",
+      "gist": "鉴定应同时进行安全性鉴定和抗震鉴定；加固应进行承载能力加固和抗震能力加固，以修复安全使用功能、延长工作年限为目标。",
+      "check_mode": "manual",
+      "keywords": [
+        "抗震鉴定",
+        "承载力加固"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-2.0.6",
+      "clause_key": "gb55021.2.0.6",
+      "gist": "既有建筑的加固必须按规定的程序进行加固设计；不得将鉴定报告直接用于施工（全文强制）。",
+      "check_mode": "manual",
+      "keywords": [
+        "加固设计",
+        "鉴定报告"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-2.0.7",
+      "clause_key": "gb55021.2.0.7",
+      "gist": "加固施工必须进行施工质量检验和竣工验收，合格后方允许投入使用（全文强制）。",
+      "check_mode": "manual",
+      "keywords": [
+        "竣工验收",
+        "质量检验"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-6.1.2",
+      "clause_key": "gb55021.6.1.2",
+      "gist": "加固设计应明确结构加固后的用途、使用环境和加固设计工作年限；在加固设计工作年限内，未经技术鉴定或设计许可，不得改变加固后结构的用途和使用环境。",
+      "check_mode": "manual",
+      "keywords": [
+        "使用年限",
+        "用途",
+        "使用环境"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-6.1.5",
+      "clause_key": "gb55021.6.1.5",
+      "gist": "加固前应按设计的规定卸除或部分卸除作用在结构上的荷载（全文强制）。",
+      "check_mode": "auto_text",
+      "keywords": [
+        "卸载",
+        "卸荷",
+        "支撑"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-6.1.8",
+      "clause_key": "gb55021.6.1.8",
+      "gist": "增大截面/置换混凝土/粘贴钢板/粘贴碳纤维复合材加固时，被加固构件现场实测混凝土强度推定值不得低于 13.0MPa；胶粘加固时混凝土表面正拉粘结强度平均值不得低于 1.5MPa，且不得用于素混凝土构件及纵向受力钢筋一侧配筋率小于 0.2% 的构件（全文强制）。",
+      "check_mode": "auto_text",
+      "keywords": [
+        "混凝土强度",
+        "正拉粘结强度",
+        "碳纤维",
+        "粘贴钢板"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-6.1.9",
+      "clause_key": "gb55021.6.1.9",
+      "gist": "采用结构胶粘结加固结构构件时，应对原结构构件进行验算；加固后正截面受弯承载力应符合现行标准的规定，并应验算其受剪承载力（全文强制）。",
+      "check_mode": "manual",
+      "keywords": [
+        "验算",
+        "受弯承载力",
+        "受剪承载力"
+      ],
+      "status": "已核对"
+    },
+    {
+      "item_id": "GB55021-6.2.3",
+      "clause_key": "gb55021.6.2.3",
+      "gist": "结构加固用的植筋应采用带肋钢筋或全螺纹螺杆，不得采用光圆钢筋；锚栓应采用有锁键效应的后扩底机械锚栓，或栓体有倒锥或全螺纹的胶粘型锚栓（全文强制）。",
+      "check_mode": "auto_text",
+      "keywords": [
+        "植筋",
+        "锚栓",
+        "带肋钢筋"
+      ],
+      "status": "已核对"
+    }
+  ]
+}

@@ -87,6 +87,7 @@ docs/<slug>.md                            # 输入 / 规则 / 算式 / 输出示
 $ speccalc list
 excavation-monitor           0.1.0      基坑监测数据判读：双控报警（累计/速率/预警比例）+ 频率时效检核
 formwork-scaffold            0.1.0      脚手架与模板支架：JGJ 130/162 验算 + 危大分级 + 构造限值核查 + 两张皮一致性
+member-strengthening         0.1.0      既有混凝土构件加固：CFRP/粘钢/增大截面/植筋验算 + 方案规则核查 + GB55021 检查单
 pavement-mqi                 0.1.0      公路技术状况评定：PCI / 路况等级 / 养护对策 / 路线 MQI（JTG 5210-2018 口径）
 steel-member                 0.1.0      钢结构验算：对接/角焊缝、普通/高强螺栓、轴压稳定与长细比（GB 50017-2017）
 
@@ -105,5 +106,6 @@ $ speccalc check excavation-monitor --input samples/excavation-monitor/zhdq.json
 |---|---|---|
 | `excavation-monitor` | 迁自 target-map ③ 行 | [`excavation-monitor.md`](excavation-monitor.md) |
 | `formwork-scaffold` | 迁自 target-map ③ 行 | [`formwork-scaffold.md`](formwork-scaffold.md) |
+| `member-strengthening` | 迁自 target-map ③ 行 | [`member-strengthening.md`](member-strengthening.md) |
 | `pavement-mqi` | 迁自 target-map ③ 行 | [`pavement-mqi.md`](pavement-mqi.md) |
 | `steel-member` | 迁自 target-map ③ 行 | [`steel-member.md`](steel-member.md) |

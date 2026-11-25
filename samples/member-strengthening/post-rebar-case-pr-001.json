@@ -1,0 +1,19 @@
+{
+  "mode": "calc",
+  "case_id": "PR-001",
+  "calc": {
+    "module": "post_rebar_anchor",
+    "params": {
+      "fc": 30.0,
+      "fy": 300.0,
+      "d": 12.0,
+      "ld": 260.0,
+      "alpha_spt": 0.8,
+      "fbd": 2.5,
+      "psi_br": 1.0,
+      "psi_w": 1.1,
+      "psi_T": 1.0,
+      "psi_ae": 1.0
+    }
+  }
+}

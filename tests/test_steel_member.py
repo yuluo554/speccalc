@@ -110,19 +110,24 @@ def test_input_fields_declared():
     assert get(SLUG).input_fields == ("module", "case_id", "params", "forces", "design_values")
 
 
-def test_builtin_manifest_sorted_and_contains_migrated_organs():
+def test_builtin_manifest_is_exactly_five_sorted_organs():
+    """2026-11-25：第 5 个器官 member-strengthening 迁入；清单锁死为精确 5 项。
+
+    44 的教训：上一版用「子集 contains + 动态 BUILTIN_MODULES 循环」，
+    第 5 个器官进门时清单断言不会红、CLI 断言也不会红。这里改成精确清单。
+    """
+    assert list(BUILTIN_MODULES) == [
+        "excavation-monitor", "formwork-scaffold", "member-strengthening",
+        "pavement-mqi", "steel-member",
+    ]
     assert list(BUILTIN_MODULES) == sorted(BUILTIN_MODULES)
-    # 2026-11-25：第 4 个器官 formwork-scaffold 迁入后，清单不再固定为 3 个；
-    # 这里只锁「三个已吸收器官仍在册」，新增器官由各自的测试守门。
-    for slug in ("excavation-monitor", "pavement-mqi", "steel-member"):
-        assert slug in BUILTIN_MODULES
 
 
-def test_cli_list_shows_three_organs(capsys):
+def test_cli_list_shows_all_five_organs(capsys):
     assert cli.main(["list"]) == EXIT_OK
-    out = capsys.readouterr().out
-    for slug in BUILTIN_MODULES:
-        assert slug in out
+    lines = [line.split()[0] for line in capsys.readouterr().out.splitlines() if line.strip()]
+    # 测试套件里其它模块可能注册临时 Pack（demo-probe）；只按内置清单精确对撞顺序。
+    assert [slug for slug in lines if slug in BUILTIN_MODULES] == list(BUILTIN_MODULES)
 
 
 def test_data_declares_nine_checks():
