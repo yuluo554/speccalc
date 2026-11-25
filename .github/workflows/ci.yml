@@ -168,10 +168,10 @@ jobs:
           # 装完整依赖（不带 --no-deps）：selftest 的 Web 探针要 import fastapi。
           python -m pip install --force-reinstall dist/*.whl
           python -c "import importlib.metadata as m; print('installed', m.version('speccalc'))"
-          construction-check --help
-          # 在仓库外跑，确保 console script 与资产都来自"装好的包"
+          speccalc --help
+          # 在仓库外跑，确保新 console script 与旧包模块/资产都来自"装好的包"
           mkdir -p /tmp/outside2 && cd /tmp/outside2
-          construction-check selftest
+          python -m app.cli selftest
 
       - uses: actions/upload-artifact@v7
         with:

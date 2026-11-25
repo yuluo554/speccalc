@@ -6,14 +6,14 @@
 
 ---
 
-## speccalc（Stage 1 内核，与 construction-check 并存）
+## speccalc（Stage 1 内核；旧入口 construction-check 已于 2026-11-25 退役）
 
 本仓正在收敛成 **speccalc**：规范计算书引擎 —— 输入构件参数，按规范条款算一遍，
 输出**每条都挂着 `code + clause + version`** 的计算书；`ok` 与 `rejected` 都必须有依据，
 凭空算出的「合格」和不合格一样不可复核。
 
-内核骨架已就位（`src/speccalc/`）。旧包 `app`（`code/backend/app`）、旧入口
-`construction-check` 与 `setup.py` 的资产钩子在过渡期内原样保留。
+内核骨架已就位（`src/speccalc/`）。旧包 `app`（`code/backend/app`）与 `setup.py` 的资产钩子保留；
+旧入口 `construction-check` 已于 2026-11-25 退役，旧包仍可用模块方式 `python -m app.cli …` 运行。
 
 ```console
 $ speccalc list
@@ -84,17 +84,18 @@ flowchart LR
 > **身份（2026-11-25 起，轨AD D）**
 > - 仓库名 / 产品名 / 主 CLI：**`speccalc`**
 > - **发行包名：`speccalc`**（原 `construction-drawing-plan-checker`；PyPI 旧名实测 404、未发布，改名无迁移包袱）
-> - **旧 CLI `construction-check` 是过渡入口，退役截止 `2026-11-30`**；两个入口并存属过渡态，
->   由 `tests/test_entry_surface.py` 门守着（截止后只许 1 条）。旧包 `code/backend/app` 仍保留，但届时不得再有可执行入口。
-> - 本 README 下文的 `construction-check …` 示例在退役前仍可用
+> - **旧 CLI `construction-check` 已于 2026-11-25 退役**（`[project.scripts]` 只剩 `speccalc`）；
+>   旧包 `code/backend/app` 仍保留，可用模块方式 `python -m app.cli …` 运行，但不再有可执行入口。
+> - 本 README 下文的 `construction-check …` 示例是**旧包历史示例**，已改为 `python -m app.cli …` 模块方式；
+>   新入口 `speccalc` 只提供 `list` / `check`，不迁旧子命令
 
 ```bash
 git clone https://github.com/yuluo554/speccalc.git
 cd speccalc
 pip install -e ".[dev]"          # 也可 cd code/backend && pip install -r ../requirements.txt
 
-# 装完先自检：确认知识库/阈值清单/Web 静态文件都就位
-construction-check selftest      # 或 cd code/backend && py -m app.cli selftest
+# 装完先自检：新入口列 3 个器官；旧包 selftest 用模块方式（cd code/backend && python -m app.cli selftest）
+speccalc list
 
 # 方式一：Web 界面（推荐）—— 在 code/backend 下启动
 cd code/backend
