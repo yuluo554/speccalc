@@ -1,0 +1,150 @@
+{
+  "case_id": "gen-0001-deep-pit",
+  "category": "deep_pit",
+  "cards": [
+    {
+      "param_id": "dp.support_type",
+      "name": "支护形式",
+      "value": null,
+      "unit": "",
+      "text_value": "放坡+土钉墙",
+      "raw_text": "采用放坡+土钉墙支护形",
+      "category": "deep_pit",
+      "confidence": 1.0,
+      "source": "rule",
+      "evidence": {
+        "doc": "gen_0001.docx",
+        "section": "一、工程概况",
+        "page": null,
+        "line_text": "本工程为合成样例项目 G0001（虚构，仅用于测试），基坑采用放坡+土钉墙支护形式。"
+      }
+    },
+    {
+      "param_id": "dp.safety_grade",
+      "name": "基坑侧壁安全等级",
+      "value": null,
+      "unit": "",
+      "text_value": "二级",
+      "raw_text": "安全等级为二级",
+      "category": "deep_pit",
+      "confidence": 1.0,
+      "source": "rule",
+      "evidence": {
+        "doc": "gen_0001.docx",
+        "section": "一、工程概况",
+        "page": null,
+        "line_text": "基坑开挖深度为4.6m，基坑侧壁安全等级为二级。"
+      }
+    },
+    {
+      "param_id": "dp.excavation_depth",
+      "name": "基坑开挖深度",
+      "value": 4.6,
+      "unit": "m",
+      "text_value": null,
+      "raw_text": "开挖深度为4.6m",
+      "category": "deep_pit",
+      "confidence": 1.0,
+      "source": "rule",
+      "evidence": {
+        "doc": "gen_0001.docx",
+        "section": "一、工程概况",
+        "page": null,
+        "line_text": "基坑开挖深度为4.6m，基坑侧壁安全等级为二级。"
+      }
+    },
+    {
+      "param_id": "dp.retaining.displacement",
+      "name": "支护结构顶部水平位移控制值",
+      "value": 35.0,
+      "unit": "mm",
+      "text_value": null,
+      "raw_text": "水平位移控制值为35mm",
+      "category": "deep_pit",
+      "confidence": 1.0,
+      "source": "rule",
+      "evidence": {
+        "doc": "gen_0001.docx",
+        "section": "五、施工安全保证措施/5.2 监测方案",
+        "page": null,
+        "line_text": "支护结构顶部水平位移控制值为35mm。"
+      }
+    },
+    {
+      "param_id": "dp.monitoring.frequency",
+      "name": "基坑监测频率（开挖至底板期间）",
+      "value": 0.5,
+      "unit": "次/d",
+      "text_value": null,
+      "raw_text": "监测频率为0.5次/d",
+      "category": "deep_pit",
+      "confidence": 1.0,
+      "source": "rule",
+      "evidence": {
+        "doc": "gen_0001.docx",
+        "section": "五、施工安全保证措施/5.2 监测方案",
+        "page": null,
+        "line_text": "开挖至坑底期间，监测频率为0.5次/d。"
+      }
+    }
+  ],
+  "document": {
+    "sections": [
+      "一、工程概况",
+      "二、编制依据",
+      "三、施工计划",
+      "四、施工工艺技术",
+      "4.1 土方开挖",
+      "4.2 支护施工",
+      "五、施工安全保证措施",
+      "5.1 组织保障",
+      "5.2 监测方案",
+      "六、施工管理及作业人员配备",
+      "七、验收要求",
+      "八、应急处置措施",
+      "九、计算书及相关图纸"
+    ],
+    "lines": [
+      "深基坑土方开挖及支护专项施工方案（合成样例）",
+      "一、工程概况",
+      "本工程为合成样例项目 G0001（虚构，仅用于测试），基坑采用放坡+土钉墙支护形式。",
+      "基坑开挖深度为4.6m，基坑侧壁安全等级为二级。",
+      "二、编制依据",
+      "1.《危险性较大的分部分项工程安全管理规定》（住建部令第37号）；",
+      "2.《关于实施〈危险性较大的分部分项工程安全管理规定〉有关问题的通知》（建办质〔2018〕31号）；",
+      "3.《建筑基坑支护技术规程》JGJ 120-2012；",
+      "4.《建筑基坑工程监测技术标准》GB 50497-2019。",
+      "三、施工计划",
+      "计划工期86天，分2段组织开挖。",
+      "四、施工工艺技术",
+      "4.1 土方开挖",
+      "土方开挖分层分段进行，每层开挖深度不超过2m。",
+      "4.2 支护施工",
+      "支护采用放坡+土钉墙工艺，随挖随支，严禁超挖。",
+      "五、施工安全保证措施",
+      "5.1 组织保障",
+      "成立以项目经理为组长的安全领导小组，责任到人。",
+      "5.2 监测方案",
+      "支护结构顶部水平位移控制值为35mm。",
+      "开挖至坑底期间，监测频率为0.5次/d。",
+      "六、施工管理及作业人员配备",
+      "现场配备专职安全员2名，特种作业人员持证上岗。",
+      "七、验收要求",
+      "支护结构验收执行JGJ 120-2012相关规定，验收合格后方可进入下道工序。",
+      "八、应急处置措施",
+      "编制应急预案，配备应急物资，定期组织演练。",
+      "九、计算书及相关图纸",
+      "支护结构计算书及基坑支护平面图见附件（合成样例略）。"
+    ]
+  },
+  "meta": {
+    "generated_from": "data/samples/gen_0001.docx",
+    "generator": "planguard 0.1.0 DocxParser + extract_cards",
+    "source_head": "0cad8a5",
+    "extract_meta": {
+      "lines_scanned": 30,
+      "discarded": []
+    },
+    "note": "输入侧解析在器官外完成；本文件是判定层的输入（参数卡 + 文档骨架）"
+  }
+}

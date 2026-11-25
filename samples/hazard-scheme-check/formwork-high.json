@@ -1,0 +1,80 @@
+{
+  "case_id": "formwork-high-8.5m",
+  "category": "formwork_support",
+  "cards": [
+    {
+      "param_id": "fs.support.height",
+      "name": "模板支撑体系搭设高度",
+      "value": 8.5,
+      "unit": "m",
+      "text_value": null,
+      "raw_text": "搭设高度 8.5m",
+      "category": "formwork_support",
+      "confidence": 1.0,
+      "source": "manual",
+      "evidence": {
+        "doc": "formwork-high.json",
+        "section": "施工工艺技术",
+        "page": null,
+        "line_text": "模板支撑体系搭设高度为8.5m。"
+      }
+    },
+    {
+      "param_id": "fs.pole.spacing",
+      "name": "立杆间距",
+      "value": 1.5,
+      "unit": "m",
+      "text_value": null,
+      "raw_text": "立杆间距 1.5m",
+      "category": "formwork_support",
+      "confidence": 1.0,
+      "source": "manual",
+      "evidence": {
+        "doc": "formwork-high.json",
+        "section": "施工工艺技术",
+        "page": null,
+        "line_text": "立杆纵距、横距均为1.5m。"
+      }
+    },
+    {
+      "param_id": "fs.formwork.type",
+      "name": "模板支撑体系类型",
+      "value": null,
+      "unit": "",
+      "text_value": "扣件式",
+      "raw_text": "扣件式钢管支撑",
+      "category": "formwork_support",
+      "confidence": 1.0,
+      "source": "manual",
+      "evidence": {
+        "doc": "formwork-high.json",
+        "section": "施工工艺技术",
+        "page": null,
+        "line_text": "采用扣件式钢管模板支撑体系。"
+      }
+    }
+  ],
+  "document": {
+    "sections": [
+      "工程概况",
+      "编制依据",
+      "施工计划",
+      "施工工艺技术",
+      "施工安全保证措施",
+      "施工管理及作业人员配备和分工",
+      "验收要求",
+      "计算书及相关图纸"
+    ],
+    "lines": [
+      "模板支撑体系搭设高度为8.5m。",
+      "立杆纵距、横距均为1.5m。",
+      "采用扣件式钢管模板支撑体系。",
+      "本专项施工方案经施工单位技术负责人审核批准。",
+      "本方案已组织专家论证。"
+    ]
+  },
+  "meta": {
+    "generated_by": "build_hazard_scheme_check_data_20261125.py",
+    "note": "手写合成样例（非真实项目）；用于文档输出示例与判定路径覆盖"
+  }
+}

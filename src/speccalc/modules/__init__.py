@@ -1,9 +1,9 @@
 """器官目录：每个器官一个子包 ``<slug>/``，导入时向注册表登记自己的 ``Pack``。
 
 **显式清单，不用 pkgutil 扫描**：扫描式加载会把「某个器官忘了登记」变成静默空跑，
-而显式清单在导入失败时立刻红。当前清单（2026-11-25 起 5 个，均迁自 target-map ③ 行）：
-``excavation-monitor`` / ``formwork-scaffold`` / ``member-strengthening`` /
-``pavement-mqi`` / ``steel-member``。
+而显式清单在导入失败时立刻红。当前清单（2026-11-25 起 6 个，均迁自 target-map ③ 行）：
+``excavation-monitor`` / ``formwork-scaffold`` / ``hazard-scheme-check`` /
+``member-strengthening`` / ``pavement-mqi`` / ``steel-member``。
 
 新增器官的三步（SKELETON-SPEC §1/§2）：
 
@@ -21,6 +21,7 @@ from typing import Tuple
 BUILTIN_MODULES: Tuple[str, ...] = (
     "excavation-monitor",
     "formwork-scaffold",
+    "hazard-scheme-check",
     "member-strengthening",
     "pavement-mqi",
     "steel-member",

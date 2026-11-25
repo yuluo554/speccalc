@@ -125,16 +125,16 @@ def test_input_fields_are_mode_and_case_id():
     assert get(SLUG).input_fields == ("mode", "case_id")
 
 
-def test_builtin_manifest_is_exactly_five_sorted_organs():
-    """第 5 个器官迁入：精确清单，不用 contains 松断言。"""
+def test_builtin_manifest_is_exactly_six_sorted_organs():
+    """第 6 个器官迁入：精确清单（同步到 hazard-scheme-check），不用 contains 松断言。"""
     assert list(BUILTIN_MODULES) == [
-        "excavation-monitor", "formwork-scaffold", "member-strengthening",
-        "pavement-mqi", "steel-member",
+        "excavation-monitor", "formwork-scaffold", "hazard-scheme-check",
+        "member-strengthening", "pavement-mqi", "steel-member",
     ]
     assert list(BUILTIN_MODULES) == sorted(BUILTIN_MODULES)
 
 
-def test_cli_list_shows_all_five_organs(capsys):
+def test_cli_list_shows_all_six_organs(capsys):
     assert cli.main(["list"]) == EXIT_OK
     lines = [line.split()[0] for line in capsys.readouterr().out.splitlines() if line.strip()]
     assert [slug for slug in lines if slug in BUILTIN_MODULES] == list(BUILTIN_MODULES)

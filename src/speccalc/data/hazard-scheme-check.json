@@ -1,0 +1,1100 @@
+{
+  "schema": "speccalc-organ-data/1",
+  "organ": "hazard-scheme-check",
+  "version": "0.1.0",
+  "source": {
+    "repo": "weida-plan-review",
+    "head": "0cad8a5",
+    "system": "PlanGuard v0.1.0 危大工程专项施工方案智能审查",
+    "note": "29 条规则逐字段迁入（深基坑 19 + 高支模 10）；源仓全部规则 basis.status=待核对"
+  },
+  "codes": {
+    "31hao": {
+      "code": "建办质〔2018〕31号",
+      "version": "2018",
+      "full_name": "关于实施《危险性较大的分部分项工程安全管理规定》有关问题的通知"
+    },
+    "37hao": {
+      "code": "住建部令第37号",
+      "version": "2019修正",
+      "full_name": "危险性较大的分部分项工程安全管理规定（2019年住建部令第47号修正）"
+    },
+    "jgj120": {
+      "code": "JGJ 120-2012",
+      "version": "2012",
+      "full_name": "建筑基坑支护技术规程"
+    },
+    "gb50497": {
+      "code": "GB 50497-2019",
+      "version": "2019",
+      "full_name": "建筑基坑工程监测技术标准"
+    },
+    "jgj162": {
+      "code": "JGJ 162-2008",
+      "version": "2008",
+      "full_name": "建筑施工模板安全技术规范"
+    },
+    "sanity": {
+      "code": "工程合理性校核（非规范条款）",
+      "version": "示例-2026",
+      "full_name": "来源仓自带的工程合理性校核（示例阈值/区间，以设计文件为准）"
+    }
+  },
+  "clause_inventory": {
+    "total_rules": 29,
+    "standard_backed": 23,
+    "sanity_only": 6,
+    "pending_review": 29,
+    "categories": {
+      "deep_pit": 19,
+      "formwork_support": 10
+    },
+    "standards": [
+      "建办质〔2018〕31号",
+      "住建部令第37号",
+      "JGJ 120-2012",
+      "GB 50497-2019",
+      "JGJ 162-2008"
+    ]
+  },
+  "constants": {
+    "multi_value_policy": "同一参数多个取值 -> needs_confirm（不硬判）",
+    "sanity_policy": "非规范条款的工程合理性校核失败 -> needs_confirm（不阻断）",
+    "status_policy": "源仓 status=待核对 原样保留并写进 evidence",
+    "required_missing_advice": "未提取到该参数，请补充或人工确认。"
+  },
+  "categories": {
+    "deep_pit": {
+      "title": "深基坑",
+      "gate_keywords": [
+        "基坑"
+      ],
+      "rule_ids": [
+        "R-DP-001",
+        "R-DP-002",
+        "R-DP-003",
+        "R-DP-004",
+        "R-DP-021",
+        "R-DP-022",
+        "R-DP-031",
+        "R-DP-032",
+        "R-DP-041",
+        "R-DP-042",
+        "R-DP-051",
+        "R-DP-052",
+        "R-DP-061",
+        "R-DP-062",
+        "R-DP-063",
+        "R-DP-072",
+        "R-DP-073",
+        "R-DP-101",
+        "R-DP-103"
+      ]
+    },
+    "formwork_support": {
+      "title": "高支模",
+      "gate_keywords": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "rule_ids": [
+        "R-FS-001",
+        "R-FS-002",
+        "R-FS-003",
+        "R-FS-004",
+        "R-FS-012",
+        "R-FS-031",
+        "R-FS-041",
+        "R-FS-051",
+        "R-FS-101",
+        "R-FS-102"
+      ]
+    }
+  },
+  "clauses": {
+    "R-DP-001": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "开挖深度参数必须可提取"
+    },
+    "R-DP-002": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "支护形式必须明确"
+    },
+    "R-DP-003": {
+      "code": "JGJ 120-2012",
+      "clause": "3.1.2（待核对）",
+      "version": "2012",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "基坑侧壁安全等级必须明确"
+    },
+    "R-DP-004": {
+      "code": "GB 50497-2019",
+      "clause": "第8章（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "位移控制值必须可提取"
+    },
+    "R-DP-021": {
+      "code": "GB 50497-2019",
+      "clause": "第8章（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "支护结构顶部水平位移控制值上限"
+    },
+    "R-DP-022": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例区间 [5,100] mm",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "位移控制值合理区间"
+    },
+    "R-DP-031": {
+      "code": "GB 50497-2019",
+      "clause": "第7章（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "基坑监测频率下限（开挖至底板期间）"
+    },
+    "R-DP-032": {
+      "code": "GB 50497-2019",
+      "clause": "第7章（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "监测频率必须可提取"
+    },
+    "R-DP-041": {
+      "code": "JGJ 120-2012",
+      "clause": "3.1.2（待核对）",
+      "version": "2012",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "基坑侧壁安全等级取值合法"
+    },
+    "R-DP-042": {
+      "code": "JGJ 120-2012",
+      "clause": "常用支护形式清单（整理版，条号待核对）",
+      "version": "2012",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "支护形式属于常见选型"
+    },
+    "R-DP-051": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "专项方案九项内容齐套（建办质〔2018〕31号）"
+    },
+    "R-DP-052": {
+      "code": "GB 50497-2019",
+      "clause": "3.0.1（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "监测方案章节完备"
+    },
+    "R-DP-061": {
+      "code": "GB 50497-2019",
+      "clause": "第7章（待核对）",
+      "version": "2019",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "监测频率宜不低于2次/d（开挖至底板期间）"
+    },
+    "R-DP-062": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例阈值 ≥5 mm",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "位移控制值合理性下限"
+    },
+    "R-DP-063": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例区间 [2,50] m",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "开挖深度合理区间"
+    },
+    "R-DP-072": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例阈值 ≤24 次/d",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "监测频率合理性上限"
+    },
+    "R-DP-073": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例阈值 ≤500 mm",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "位移控制值合理性上限（复核用）"
+    },
+    "R-DP-101": {
+      "code": "住建部令第37号",
+      "clause": "第十二条",
+      "version": "2019修正",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "开挖深度≥5m须组织专家论证"
+    },
+    "R-DP-103": {
+      "code": "住建部令第37号",
+      "clause": "第十九条（待核对）",
+      "version": "2019修正",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "开挖深度≥3m（危大）须开展基坑监测"
+    },
+    "R-FS-001": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "高支模支撑体系搭设高度必须可提取"
+    },
+    "R-FS-002": {
+      "code": "建办质〔2018〕31号",
+      "clause": "附件1（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "模板支撑体系搭设高度必须可提取"
+    },
+    "R-FS-003": {
+      "code": "JGJ 162-2008",
+      "clause": "设计（条号待核对）",
+      "version": "2008",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "模板支撑体系立杆间距必须可提取"
+    },
+    "R-FS-004": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "模板支撑体系类型必须明确"
+    },
+    "R-FS-012": {
+      "code": "工程合理性校核（非规范条款）",
+      "clause": "示例区间 [2,30] m",
+      "version": "示例-2026",
+      "status": "待核对",
+      "basis_kind": "sanity",
+      "topic": "搭设高度合理区间"
+    },
+    "R-FS-031": {
+      "code": "JGJ 162-2008",
+      "clause": "构造（条号待核对）",
+      "version": "2008",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "立杆间距上限（示例）"
+    },
+    "R-FS-041": {
+      "code": "JGJ 162-2008",
+      "clause": "常用模板支撑体系形式（整理版，条号待核对）",
+      "version": "2008",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "支撑体系类型属于常见选型"
+    },
+    "R-FS-051": {
+      "code": "建办质〔2018〕31号",
+      "clause": "内容清单（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "高支模专项方案九项内容齐套（建办质〔2018〕31号）"
+    },
+    "R-FS-101": {
+      "code": "建办质〔2018〕31号",
+      "clause": "附件2（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "搭设高度≥8m（超过一定规模）须组织专家论证"
+    },
+    "R-FS-102": {
+      "code": "建办质〔2018〕31号",
+      "clause": "附件1（条号待核对）",
+      "version": "2018",
+      "status": "待核对",
+      "basis_kind": "standard",
+      "topic": "搭设高度≥5m（危大）须编制专项施工方案"
+    }
+  },
+  "rules": [
+    {
+      "id": "R-DP-001",
+      "name": "开挖深度参数必须可提取",
+      "category": "deep_pit",
+      "check_type": "required",
+      "param": "dp.excavation_depth",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到基坑开挖深度，请检查“工程概况/施工工艺”章节是否明确给出，或人工确认。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-001",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号：专项施工方案应包含工程概况及关键参数（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-002",
+      "name": "支护形式必须明确",
+      "category": "deep_pit",
+      "check_type": "required",
+      "param": "dp.support_type",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到支护形式，请在“工程概况/施工工艺技术”章节明确支护选型。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-002",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号：专项施工方案应包含施工工艺技术（支护形式）（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-003",
+      "name": "基坑侧壁安全等级必须明确",
+      "category": "deep_pit",
+      "check_type": "required",
+      "param": "dp.safety_grade",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到基坑侧壁安全等级，请补充（一级/二级/三级）。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-003",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 120-2012：基坑支护设计应明确侧壁安全等级（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-004",
+      "name": "位移控制值必须可提取",
+      "category": "deep_pit",
+      "check_type": "required",
+      "param": "dp.retaining.displacement",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到支护结构位移控制值，请在监测方案中明确。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-004",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019：基坑监测应明确位移报警/控制值（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-021",
+      "name": "支护结构顶部水平位移控制值上限",
+      "category": "deep_pit",
+      "check_type": "threshold_max",
+      "param": "dp.retaining.displacement",
+      "level": "强制",
+      "severity": "error",
+      "advice": "位移控制值实测 {value}{unit}，超过示例上限 {limit}{unit}；请复核监测报警值取值并与设计文件核对。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值，正式入库前逐条核对官方文本",
+      "op": "<=",
+      "value": 30,
+      "unit": "mm",
+      "basis_key": "R-DP-021",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019 监测报警值要求（示例阈值，以官方文本为准）",
+      "threshold_status": "示例阈值，正式入库前逐条核对官方文本"
+    },
+    {
+      "id": "R-DP-022",
+      "name": "位移控制值合理区间",
+      "category": "deep_pit",
+      "check_type": "within_range",
+      "param": "dp.retaining.displacement",
+      "level": "强制",
+      "severity": "error",
+      "advice": "位移控制值实测 {value}{unit} 超出合理区间，请与设计文件核对。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例区间",
+      "unit": "mm",
+      "min_value": 5,
+      "max_value": 100,
+      "basis_key": "R-DP-022",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例区间，以设计文件为准）",
+      "threshold_status": "示例区间"
+    },
+    {
+      "id": "R-DP-031",
+      "name": "基坑监测频率下限（开挖至底板期间）",
+      "category": "deep_pit",
+      "check_type": "threshold_min",
+      "param": "dp.monitoring.frequency",
+      "level": "强制",
+      "severity": "error",
+      "advice": "监测频率实测 {value}{unit}，低于示例下限 {limit}{unit}；请复核监测方案频率设置。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值，正式入库前逐条核对官方文本",
+      "op": ">=",
+      "value": 1,
+      "unit": "次/d",
+      "basis_key": "R-DP-031",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019 监测频率要求（示例阈值，以官方文本为准）",
+      "threshold_status": "示例阈值，正式入库前逐条核对官方文本"
+    },
+    {
+      "id": "R-DP-032",
+      "name": "监测频率必须可提取",
+      "category": "deep_pit",
+      "check_type": "required",
+      "param": "dp.monitoring.frequency",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到监测频率，请在监测方案中明确各工况频率。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-032",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019：监测方案应明确监测频率（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-041",
+      "name": "基坑侧壁安全等级取值合法",
+      "category": "deep_pit",
+      "check_type": "enum",
+      "param": "dp.safety_grade",
+      "level": "强制",
+      "severity": "error",
+      "advice": "安全等级取值不合法，应为一级/二级/三级。",
+      "enabled": true,
+      "stage": "M3",
+      "allowed": [
+        "一级",
+        "二级",
+        "三级"
+      ],
+      "basis_key": "R-DP-041",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 120-2012：基坑侧壁安全等级分为一/二/三级（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-042",
+      "name": "支护形式属于常见选型",
+      "category": "deep_pit",
+      "check_type": "enum",
+      "param": "dp.support_type",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "支护形式「{value}」不在常见选型清单内，请人工复核。",
+      "enabled": true,
+      "stage": "M3",
+      "allowed": [
+        "放坡",
+        "土钉墙",
+        "桩锚",
+        "排桩",
+        "地下连续墙",
+        "地连墙",
+        "钢板桩",
+        "SMW",
+        "内支撑",
+        "锚杆",
+        "重力式挡墙"
+      ],
+      "basis_key": "R-DP-042",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 120-2012 常用支护形式清单（整理版，非穷举）",
+      "threshold_status": "整理版，非穷举"
+    },
+    {
+      "id": "R-DP-051",
+      "name": "专项方案九项内容齐套（建办质〔2018〕31号）",
+      "category": "deep_pit",
+      "check_type": "checklist_section",
+      "param": "doc.sections",
+      "level": "强制",
+      "severity": "error",
+      "advice": "请按建办质〔2018〕31号补齐专项方案必备章节。",
+      "enabled": true,
+      "stage": "M3",
+      "sections": [
+        {
+          "title": "工程概况",
+          "keywords": [
+            "工程概况"
+          ]
+        },
+        {
+          "title": "编制依据",
+          "keywords": [
+            "编制依据"
+          ]
+        },
+        {
+          "title": "施工计划",
+          "keywords": [
+            "施工计划",
+            "进度计划"
+          ]
+        },
+        {
+          "title": "施工工艺技术",
+          "keywords": [
+            "施工工艺",
+            "施工方案"
+          ]
+        },
+        {
+          "title": "施工安全保证措施",
+          "keywords": [
+            "安全保证措施",
+            "安全措施"
+          ]
+        },
+        {
+          "title": "施工管理及作业人员配备和分工",
+          "keywords": [
+            "施工管理",
+            "人员配备"
+          ]
+        },
+        {
+          "title": "验收要求",
+          "keywords": [
+            "验收"
+          ]
+        },
+        {
+          "title": "应急处置措施",
+          "keywords": [
+            "应急处置",
+            "应急预案"
+          ]
+        },
+        {
+          "title": "计算书及相关图纸",
+          "keywords": [
+            "计算书",
+            "相关图纸"
+          ]
+        }
+      ],
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-051",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号 附件1：专项施工方案内容要求（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-052",
+      "name": "监测方案章节完备",
+      "category": "deep_pit",
+      "check_type": "checklist_section",
+      "param": "doc.sections",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未检出监测方案相关章节，请补充。",
+      "enabled": true,
+      "stage": "M3",
+      "sections": [
+        {
+          "title": "监测方案",
+          "keywords": [
+            "监测方案",
+            "监测"
+          ]
+        }
+      ],
+      "only_if_text": [
+        "基坑"
+      ],
+      "basis_key": "R-DP-052",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019：基坑工程应实施第三方监测并编制监测方案（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-061",
+      "name": "监测频率宜不低于2次/d（开挖至底板期间）",
+      "category": "deep_pit",
+      "check_type": "threshold_min",
+      "param": "dp.monitoring.frequency",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "监测频率实测 {value}{unit}，低于建议值 {limit}{unit}；请结合基坑安全等级复核。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值，待核对",
+      "op": ">=",
+      "value": 2,
+      "unit": "次/d",
+      "basis_key": "R-DP-061",
+      "basis_kind": "standard",
+      "source_quote": "GB 50497-2019 监测频率要求（示例阈值，一级基坑建议值，以官方文本为准）",
+      "threshold_status": "示例阈值，待核对"
+    },
+    {
+      "id": "R-DP-062",
+      "name": "位移控制值合理性下限",
+      "category": "deep_pit",
+      "check_type": "threshold_min",
+      "param": "dp.retaining.displacement",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "位移控制值实测 {value}{unit} 明显偏小，请复核取值依据。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值",
+      "op": ">=",
+      "value": 5,
+      "unit": "mm",
+      "basis_key": "R-DP-062",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例阈值）",
+      "threshold_status": "示例阈值"
+    },
+    {
+      "id": "R-DP-063",
+      "name": "开挖深度合理区间",
+      "category": "deep_pit",
+      "check_type": "within_range",
+      "param": "dp.excavation_depth",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "开挖深度实测 {value}{unit} 超出常见区间，请复核。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例区间",
+      "unit": "m",
+      "min_value": 2,
+      "max_value": 50,
+      "basis_key": "R-DP-063",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例区间）",
+      "threshold_status": "示例区间"
+    },
+    {
+      "id": "R-DP-072",
+      "name": "监测频率合理性上限",
+      "category": "deep_pit",
+      "check_type": "threshold_max",
+      "param": "dp.monitoring.frequency",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "监测频率实测 {value}{unit} 异常偏大，请复核。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值",
+      "op": "<=",
+      "value": 24,
+      "unit": "次/d",
+      "basis_key": "R-DP-072",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例阈值）",
+      "threshold_status": "示例阈值"
+    },
+    {
+      "id": "R-DP-073",
+      "name": "位移控制值合理性上限（复核用）",
+      "category": "deep_pit",
+      "check_type": "threshold_max",
+      "param": "dp.retaining.displacement",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "位移控制值实测 {value}{unit} 异常偏大，请复核。",
+      "enabled": true,
+      "stage": "M3",
+      "note": "示例阈值",
+      "op": "<=",
+      "value": 500,
+      "unit": "mm",
+      "basis_key": "R-DP-073",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例阈值）",
+      "threshold_status": "示例阈值"
+    },
+    {
+      "id": "R-DP-101",
+      "name": "开挖深度≥5m须组织专家论证",
+      "category": "deep_pit",
+      "check_type": "conditional_program",
+      "param": "dp.excavation_depth",
+      "level": "强制",
+      "severity": "error",
+      "advice": "方案未体现专家论证程序，请补充论证材料或组织论证。",
+      "enabled": true,
+      "stage": "M3",
+      "condition": {
+        "min": 5
+      },
+      "require_text": "专家论证",
+      "basis_key": "R-DP-101",
+      "basis_kind": "standard",
+      "source_quote": "住建部令第37号/建办质〔2018〕31号：超过一定规模的危大工程应组织专家论证（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-DP-103",
+      "name": "开挖深度≥3m（危大）须开展基坑监测",
+      "category": "deep_pit",
+      "check_type": "conditional_program",
+      "param": "dp.excavation_depth",
+      "level": "强制",
+      "severity": "error",
+      "advice": "方案未检出监测相关内容，请按危大工程要求编制监测方案。",
+      "enabled": true,
+      "stage": "M3",
+      "condition": {
+        "min": 3
+      },
+      "require_text": "监测",
+      "basis_key": "R-DP-103",
+      "basis_kind": "standard",
+      "source_quote": "住建部令第37号/建办质〔2018〕31号：开挖深度≥3m 的基坑属危大工程，应实施监测（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-001",
+      "name": "高支模支撑体系搭设高度必须可提取",
+      "category": "formwork_support",
+      "check_type": "required",
+      "param": "fs.support.height",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到支撑体系搭设高度，请检查“施工工艺技术”章节，或人工确认。",
+      "enabled": true,
+      "stage": "M3",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-001",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号：模板支撑工程应明确搭设高度等关键参数（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-002",
+      "name": "模板支撑体系搭设高度必须可提取",
+      "category": "formwork_support",
+      "check_type": "required",
+      "param": "fs.support.height",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到模板支撑体系搭设高度，请检查“施工工艺技术”章节，或人工确认。",
+      "enabled": true,
+      "stage": "M5",
+      "note": "R-FS-001 同口径，见 deep_pit.sample.json（M3 打样）",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-002",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号：混凝土模板支撑工程应明确搭设高度等关键参数（附件1，条号待核对）",
+      "threshold_status": "R-FS-001 同口径，见 deep_pit.sample.json（M3 打样）"
+    },
+    {
+      "id": "R-FS-003",
+      "name": "模板支撑体系立杆间距必须可提取",
+      "category": "formwork_support",
+      "check_type": "required",
+      "param": "fs.pole.spacing",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到立杆间距，请在支撑体系设计中明确立杆纵距/横距（或立杆间距）。",
+      "enabled": true,
+      "stage": "M5",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-003",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 162-2008：模板支撑体系设计应明确立杆布置参数（条号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-004",
+      "name": "模板支撑体系类型必须明确",
+      "category": "formwork_support",
+      "check_type": "required",
+      "param": "fs.formwork.type",
+      "level": "强制",
+      "severity": "error",
+      "advice": "未定位到支撑体系类型，请在施工工艺技术中明确（扣件式/盘扣式/碗扣式/门式钢管等）。",
+      "enabled": true,
+      "stage": "M5",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-004",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号：专项施工方案应包含施工工艺技术（条文编号待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-012",
+      "name": "搭设高度合理区间",
+      "category": "formwork_support",
+      "check_type": "within_range",
+      "param": "fs.support.height",
+      "level": "强制",
+      "severity": "error",
+      "advice": "搭设高度实测 {value}{unit} 超出合理区间，请与设计文件核对。",
+      "enabled": true,
+      "stage": "M5",
+      "note": "示例区间",
+      "unit": "m",
+      "min_value": 2,
+      "max_value": 30,
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-012",
+      "basis_kind": "sanity",
+      "source_quote": "工程合理性校核（示例区间，以设计文件为准）",
+      "threshold_status": "示例区间"
+    },
+    {
+      "id": "R-FS-031",
+      "name": "立杆间距上限（示例）",
+      "category": "formwork_support",
+      "check_type": "threshold_max",
+      "param": "fs.pole.spacing",
+      "level": "强制",
+      "severity": "error",
+      "advice": "立杆间距实测 {value}{unit}，超过示例上限 {limit}{unit}；请复核支撑体系设计计算书。",
+      "enabled": true,
+      "stage": "M5",
+      "note": "示例阈值，正式入库前逐条核对官方文本",
+      "op": "<=",
+      "value": 1.2,
+      "unit": "m",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-031",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 162-2008 / JGJ 130-2011 模板支撑立杆间距构造要求（示例阈值，以官方文本与设计计算为准）",
+      "threshold_status": "示例阈值，正式入库前逐条核对官方文本"
+    },
+    {
+      "id": "R-FS-041",
+      "name": "支撑体系类型属于常见选型",
+      "category": "formwork_support",
+      "check_type": "enum",
+      "param": "fs.formwork.type",
+      "level": "建议",
+      "severity": "warning",
+      "advice": "支撑体系类型「{value}」不在常见选型清单内，请人工复核。",
+      "enabled": true,
+      "stage": "M5",
+      "allowed": [
+        "扣件式",
+        "盘扣式",
+        "碗扣式",
+        "门式"
+      ],
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-041",
+      "basis_kind": "standard",
+      "source_quote": "JGJ 162-2008 / JGJ 130-2011 常用模板支撑体系形式（整理版，非穷举）",
+      "threshold_status": "整理版，非穷举"
+    },
+    {
+      "id": "R-FS-051",
+      "name": "高支模专项方案九项内容齐套（建办质〔2018〕31号）",
+      "category": "formwork_support",
+      "check_type": "checklist_section",
+      "param": "doc.sections",
+      "level": "强制",
+      "severity": "error",
+      "advice": "请按建办质〔2018〕31号补齐专项方案必备章节。",
+      "enabled": true,
+      "stage": "M5",
+      "sections": [
+        {
+          "title": "工程概况",
+          "keywords": [
+            "工程概况"
+          ]
+        },
+        {
+          "title": "编制依据",
+          "keywords": [
+            "编制依据"
+          ]
+        },
+        {
+          "title": "施工计划",
+          "keywords": [
+            "施工计划",
+            "进度计划"
+          ]
+        },
+        {
+          "title": "施工工艺技术",
+          "keywords": [
+            "施工工艺",
+            "施工方案"
+          ]
+        },
+        {
+          "title": "施工安全保证措施",
+          "keywords": [
+            "安全保证措施",
+            "安全措施"
+          ]
+        },
+        {
+          "title": "施工管理及作业人员配备和分工",
+          "keywords": [
+            "施工管理",
+            "人员配备"
+          ]
+        },
+        {
+          "title": "验收要求",
+          "keywords": [
+            "验收"
+          ]
+        },
+        {
+          "title": "应急处置措施",
+          "keywords": [
+            "应急处置",
+            "应急预案"
+          ]
+        },
+        {
+          "title": "计算书及相关图纸",
+          "keywords": [
+            "计算书",
+            "相关图纸"
+          ]
+        }
+      ],
+      "only_if_text": [
+        "模板支撑",
+        "高支模",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-051",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号 附件1：专项施工方案内容要求（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-101",
+      "name": "搭设高度≥8m（超过一定规模）须组织专家论证",
+      "category": "formwork_support",
+      "check_type": "conditional_program",
+      "param": "fs.support.height",
+      "level": "强制",
+      "severity": "error",
+      "advice": "方案未体现专家论证程序，请补充论证材料或组织论证。",
+      "enabled": true,
+      "stage": "M5",
+      "condition": {
+        "min": 8
+      },
+      "require_text": "专家论证",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-101",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号 附件2：混凝土模板支撑工程搭设高度8m及以上属超过一定规模的危大工程，应组织专家论证（待核对）",
+      "threshold_status": "条文编号待核对"
+    },
+    {
+      "id": "R-FS-102",
+      "name": "搭设高度≥5m（危大）须编制专项施工方案",
+      "category": "formwork_support",
+      "check_type": "conditional_program",
+      "param": "fs.support.height",
+      "level": "强制",
+      "severity": "error",
+      "advice": "方案未体现专项施工方案名目，请按危大工程要求编制。",
+      "enabled": true,
+      "stage": "M5",
+      "condition": {
+        "min": 5
+      },
+      "require_text": "专项施工方案",
+      "only_if_text": [
+        "高支模",
+        "模板支撑",
+        "模板工程"
+      ],
+      "basis_key": "R-FS-102",
+      "basis_kind": "standard",
+      "source_quote": "建办质〔2018〕31号 附件1：混凝土模板支撑工程搭设高度5m及以上属危大工程，应编制专项施工方案（待核对）",
+      "threshold_status": "条文编号待核对"
+    }
+  ]
+}

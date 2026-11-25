@@ -78,15 +78,16 @@ docs/<slug>.md                            # 输入 / 规则 / 算式 / 输出示
 |---|---|---|
 | 新包 | `src/speccalc/` | 本页所写的新内核 |
 | 旧包 | `code/backend/app` | 原样保留，器官逐个迁出后再删 |
-| 打包 | `pyproject.toml` 双根：`"" -> code/backend`、`"speccalc" -> src/speccalc` | setuptools 的 `get_package_dir` 按最长前缀回溯，子包解析正确（`pip wheel` 实测：`speccalc/` 下 15 个条目，其中 `data/` 4 个器官数据文件 `excavation-monitor.json` / `formwork-scaffold.json` / `pavement-mqi.json` / `steel-member.json`，解包后 `speccalc list` 能列出 4 个器官 = 数据确实来自包内） |
+| 打包 | `pyproject.toml` 双根：`"" -> code/backend`、`"speccalc" -> src/speccalc` | setuptools 的 `get_package_dir` 按最长前缀回溯，子包解析正确（`pip wheel` 实测：`speccalc/` 下 21 个文件条目，其中 `data/` 6 个器官数据文件 `excavation-monitor.json` / `formwork-scaffold.json` / `hazard-scheme-check.json` / `member-strengthening.json` / `pavement-mqi.json` / `steel-member.json`，解包后 `speccalc list` 能列出 6 个器官 = 数据确实来自包内） |
 | `setup.py` | 仍在，`build_py` 钩子把运行期资产铺进 `app/_data/` | **保留一版过渡**；新器官的 `data/` 由 `package-data` 的 `speccalc = ["py.typed", "data/*.json"]` 收 |
 
-## 8. 示例（已迁入 3 个器官）
+## 8. 示例（已迁入 6 个器官）
 
 ```console
 $ speccalc list
 excavation-monitor           0.1.0      基坑监测数据判读：双控报警（累计/速率/预警比例）+ 频率时效检核
 formwork-scaffold            0.1.0      脚手架与模板支架：JGJ 130/162 验算 + 危大分级 + 构造限值核查 + 两张皮一致性
+hazard-scheme-check          0.1.0      危大工程专项施工方案合规校核：参数卡 × 29 条规则（深基坑 19 + 高支模 10）
 member-strengthening         0.1.0      既有混凝土构件加固：CFRP/粘钢/增大截面/植筋验算 + 方案规则核查 + GB55021 检查单
 pavement-mqi                 0.1.0      公路技术状况评定：PCI / 路况等级 / 养护对策 / 路线 MQI（JTG 5210-2018 口径）
 steel-member                 0.1.0      钢结构验算：对接/角焊缝、普通/高强螺栓、轴压稳定与长细比（GB 50017-2017）
@@ -97,6 +98,11 @@ PackMissing: 未注册的器官：no-such          # 退出码 3
 $ speccalc check excavation-monitor --input samples/excavation-monitor/zhdq.json \
         --basis samples/basis.json
 … 合计 587 条，阻断 5 条（ok=582 rejected=5）   # 退出码 1
+
+$ speccalc check hazard-scheme-check \
+        --input samples/hazard-scheme-check/gen-0001-deep-pit.json \
+        --basis samples/hazard-scheme-check/basis.json
+… 合计 18 条，阻断 3 条（ok=15 rejected=3）    # 退出码 1
 ```
 
 器官表按 `_workspace/target-map-20261125.tsv` 的 ③speccalc 行逐个补齐，每个器官一页
@@ -106,6 +112,7 @@ $ speccalc check excavation-monitor --input samples/excavation-monitor/zhdq.json
 |---|---|---|
 | `excavation-monitor` | 迁自 target-map ③ 行 | [`excavation-monitor.md`](excavation-monitor.md) |
 | `formwork-scaffold` | 迁自 target-map ③ 行 | [`formwork-scaffold.md`](formwork-scaffold.md) |
+| `hazard-scheme-check` | 迁自 target-map ③ 行 | [`hazard-scheme-check.md`](hazard-scheme-check.md) |
 | `member-strengthening` | 迁自 target-map ③ 行 | [`member-strengthening.md`](member-strengthening.md) |
 | `pavement-mqi` | 迁自 target-map ③ 行 | [`pavement-mqi.md`](pavement-mqi.md) |
 | `steel-member` | 迁自 target-map ③ 行 | [`steel-member.md`](steel-member.md) |
